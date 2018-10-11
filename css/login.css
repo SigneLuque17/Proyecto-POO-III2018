@@ -15,14 +15,14 @@ body{
     margin-top: 1%;
     margin-left: 10%;
     margin-right: 10%;
-    height: 291%;
+    height: 140%;
 }
 
 /*====================seccion 1=============================*/
 .seccion1{
     background-color: #003360;
     position: relative;
-    height: 8%;
+    height: 18%;
     align-content: center;
     background-image: url(../img/logos/LucemAspicioAmarillo.png);
     background-repeat: no-repeat;
@@ -126,4 +126,31 @@ legend.borde{
 
 #form1{
     margin: 10% 35%;
+}
+
+#estudiante{
+    color:#CF6600; 
+    margin-top: 15px;
+    margin-left: 15px; 
+    font-weight:bold;
+}
+
+/*========================seccion 3 footer========================*/
+.footer{
+    background-color: #003360;
+    height: 10%;
+    color: #fff;
+    text-align: center;
+    margin-top: 3%;
+}
+
+
+#advertencia p {
+    margin: 3px 0;
+    color:brown; 
+    text-align: center;
+}
+
+#derechos p{
+    margin: 3px 0;
 }
