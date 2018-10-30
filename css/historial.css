@@ -15,14 +15,14 @@ body{
     margin-top: 1%;
     margin-left: 10%;
     margin-right: 10%;
-    height: 291%;
+    height: 150%;
 }
 
 /*====================seccion 1=============================*/
 .seccion1{
     background-color: #003360;
     position: relative;
-    height: 8%;
+    height: 15%;
     align-content: center;
     background-image: url(../img/logos/LucemAspicioAmarillo.png);
     background-repeat: no-repeat;
@@ -111,6 +111,31 @@ color: #FDED07 !important;
 #formulario-signup .form-control{
     margin:5px;
 }
+/*----------->seccion2<------------*/
+#encabezado1{
+    font-weight: bold;
+}
 
-/*----------->validaciones<------------*/
-     
+/*----------->seccion3<------------*/
+.seccion3{
+    height: 500px;
+}
+
+#encabezado2{
+    background-image: linear-gradient(rgb(108, 233, 255), #ECF4FE); 
+    font-size: 13px;
+    font-weight:bold 
+} 
+.btn-primary :hover{
+    background-color: #FFC17C;
+}    
+
+
+/*========================footer========================*/
+.footer{
+    background-color: #003360;
+    height: 100px;
+    color: #fff;
+    text-align: center;
+    margin-top: 3%;
+}
