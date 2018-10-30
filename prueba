@@ -1,0 +1,56 @@
+    <main role="main" class="container">
+        <div class="row"> 
+            <div style="background-color:#183F60; margin-top: 3%;" class="col-12 col-sm-12 col-md-6 col-lg-6 form-control">
+                <div class="row" id="formulario-signup">         
+                    <div style="margin-left:auto; margin-right:auto; padding-top:3%">
+                        <p style="color:white"> <b> CREA TU CUENTA UNAH </b></p>
+                    </div>
+                    
+
+                    <div class="col-12">
+                        <input class="form-control" type="text" placeholder="Nombre" id="txt-nombre">
+                    </div>
+
+                    <div class="col-12">
+                        <input class="form-control" type="text" placeholder="Apellido" id="txt-apellido">
+                    </div>
+
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <input class="form-control" type="text" placeholder="Nº cuenta" id="cuenta">
+                    </div>
+
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <input class="form-control" type="text" placeholder="Nº identidad" id="identidad">
+                    </div>
+
+                    <div class="col-12">
+                        <input class="form-control" type="password" placeholder="Contraseña" id="contraseña">
+                    </div>
+
+                    <div class="col-12">                  
+                        <select name="carrera" id="carrera" class="form-control"></select>
+                    </div>
+
+                    <div class="col-12">
+                        <select name="carrera" id="centro" class="form-control"></select>
+                    </div>
+
+                    <div class="col-12">
+                        <input class="form-control" type="text" placeholder="Correo electrónico" id="mail">
+                    </div>
+                    <br>
+                    <button style="margin:3%;" class="btn btn-success" type="button " id="btn-registrarse" onclick="registrar();">Registrarse</button>
+                </div>
+            </div>
+
+ <!---------lado derecho--------->       
+    
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-none d-sm-block">
+                <div id="informacion" style="background-color: #FFFFCC; margin-top: 7%" class="form-control">
+                   
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <script src="js/controlador-singup.js"></script>
