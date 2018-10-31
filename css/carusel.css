@@ -1,0 +1,70 @@
+
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #0c0909;
+}
+
+.main-header{
+  background: rgba(0, 51, 153,.3);
+  
+}
+
+.carousel {
+  margin-bottom: 4rem;
+}
+
+
+/* 
+Declarar alturas por posicionamiento del elemento img. */
+.carousel-item {
+  height: 32rem;
+  background-color: rgb(209, 180, 180);
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+.featurette-image{
+  padding: auto;
+}
+
+
+.featurette-divider {
+  margin: 1rem 0 0 2rem; /* Espacio en el Bootstrap */
+}
+
+
+
+
+.header-overlay{
+  background: url(../img/footer.png);
+  background: cover;
+}
+
+
+@media (min-width: 40em) {
+  /* Aumentar el tamaño del contenido del carrusel */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+  .footer{
+    background-color: #003360;
+    background-image: url(../img/footer-unah.png);
+    height: 10%;
+    color: #fff;
+    text-align: center;
+}
+  
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 3rem;
+  }
+}
