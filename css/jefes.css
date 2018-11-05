@@ -121,6 +121,9 @@ color: #FDED07 !important;
     font-size: 1.5em;
 }
 
+a{
+    color: black;
+}
 
 td {
     padding: 3px;

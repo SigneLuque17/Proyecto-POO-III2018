@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/FontAwesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="css//FontAwesome/css/all.css">
     <link rel="stylesheet" href="css/informacion-estudiante.css">
+    <script src="js/jquery-3.3.1.js"></script>     
+    <script src="js/bootstrap.min.js"></script> 
 </head>
 <body>
     <div class="fondo">
@@ -97,8 +99,14 @@
 
         <section>
             <div>
-                <p id="jefe">INFORMACIÓN DE ESTUDIANTE</p>
-                <div  style="float:right; margin-right: 1%"><a href="#">Cerrar sesión  </a><i class="fas fa-times-circle" style="color:red"></i></div> 
+                <p id="jefe">INFORMACIÓN DE ESTUDIANTE</p>       
+                <div  style="float:right; margin-right: 1%"><a style="color:black" onclick="goBack()">Volver  </a><i class="fas fa-times-circle" style="color:red"></i></div>
+                            <script>
+                                    function goBack() {
+                                        window.history.back();
+                                    }
+                            </script>
+                <div  style="float:right; margin-right: 1%"><a href="login.html">Cerrar sesión  </a><i class="fas fa-times-circle" style="color:red"></i></div> 
             </div>
             <br><br>
             <hr>
@@ -106,26 +114,74 @@
             <div class="parte2">
                     <table>
                         <tr>
-                            <td> <img src="img/iconos/flecha1.jpg"> <a href="#">Historial académico</a></td>
+                            <td> <img src="img/iconos/flecha1.jpg"><button style="font-size: 1em; color:black" type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">Historial Académico</button></td>
                         </tr>
                         <!--buscar por numero de cuenta-->
                         <tr>
-                            <td> <img src="img/iconos/flecha1.jpg"><a href="#">Forma 03 </a></td>
-                           
+                            <td> <img src="img/iconos/flecha1.jpg"><button style="font-size: 1em; color:black" type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal2">Forma 03</button></td>                       
                         </tr>
 
                     </table>                         
             </div>
-    </section>
+        </section>
 
-    <section class="footer" style="margin: 0">
-        <div id="derechos" style="padding:10px">
-            <p>© Derechos Reservados UNAH 2018</p>
-            <a href="#" style="color: #fff">Dirección Ejecutiva de Gestión de Tecnología (DEGT)</a>                  
-        </div>
-    </section>
-
-
-
+        <section class="footer" style="margin: 0">
+            <div id="derechos" style="padding:10px">
+                <p>© Derechos Reservados UNAH 2018</p>
+                <a href="#" style="color: #fff">Dirección Ejecutiva de Gestión de Tecnología (DEGT)</a>                  
+            </div>
+        </section>
     </div>
+<!--********************************VENTANA MODAL HISTORIAL*****************************************-->
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            
+              <!-- Modal content-->
+            <div class="modal-content" style="background-color:#183F60">
+                <div class="modal-header centrar" >
+                  <h6 class="modal-title" style="color:white"><b>BUSCAR HISTORIAL ACADÉMICO</b></h6>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body" style="background-color:rgb(255, 255, 255);" class="col-12 col-sm-12 col-md-6 col-lg-6 form-control">
+                  
+                                <div class="row centrar">               
+                                    <div class="col-12" style="margin-bottom:2%">
+                                        <input class="form-control" type="text" placeholder="Ingrese el número de cuenta del alumno" id="txt-buscarHistorial">                                       
+                                    </div>  
+                                    <br>  
+                                    <button class="btn btn-success centrar"  type="button" value="Buscar">Buscar</button>                            
+                                </div>
+                </div>                                
+            </div>
+        </div>
+          
+    </div>
+<!--********************************FIN VENTANA MODAL HISTORIAL*****************************************-->
+<!--********************************VENTANA MODAL FORMA 03*****************************************-->
+<!-- Modal -->
+<div class="modal fade" id="myModal2" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            
+              <!-- Modal content-->
+            <div class="modal-content" style="background-color:#183F60">
+                <div class="modal-header centrar" >
+                  <h6 class="modal-title" style="color:white"><b>BUSCAR FORMA 03</b></h6>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body" style="background-color:rgb(255, 255, 255);" class="col-12 col-sm-12 col-md-6 col-lg-6 form-control">
+                  
+                                <div class="row centrar">               
+                                    <div class="col-12" style="margin-bottom:2%">
+                                        <input class="form-control" type="text" placeholder="Ingrese el número de cuenta del alumno" id="txt-buscarForma">                                       
+                                    </div>  
+                                    <br>  
+                                    <button class="btn btn-success centrar"  type="button" value="Buscar">Buscar</button>                            
+                                </div>
+                </div>                                
+            </div>
+        </div>         
+</div>
+<!--********************************FIN VENTANA MODAL FORMA 03*****************************************-->
+
 </body>

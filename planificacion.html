@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/FontAwesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="css//FontAwesome/css/all.css">
     <link rel="stylesheet" href="css/planificacion.css">
+    <script src="js/jquery-3.3.1.js"></script>     
+    <script src="js/bootstrap.min.js"></script> 
 </head>
 <body>
     <div class="fondo">
@@ -98,30 +100,30 @@
         <section>
             <div>
                 <p id="jefe">PLANIFICACIÓN ACADÉMICA</p>
-                <div  style="float:right; margin-right: 1%"><a href="#">Cerrar sesión  </a><i class="fas fa-times-circle" style="color:red"></i></div> 
+                <div  style="float:right; margin-right: 1%"><a href="login.html">Cerrar sesión  </a><i class="fas fa-times-circle" style="color:red"></i></div> 
             </div>
             <br><br>
             <hr>
 
             <div class="parte2">
-                    <table>
-                        <tr>
-                            <td> <img src="img/iconos/flecha1.jpg"> <a href="#">Crear sección</a></td>
+                    <table >
+                        <tr>                            
+                            <td> 
+                                <p style="margin: 5% 15%; font-weight: bold; color: #337B31">PLANIFICACIÓN</p>
+                                <img src="img/iconos/flecha1.jpg"><button style="font-size: 1em; color:black" type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">Crear Sección</button>
+                            </td>
+                                            
+                            <td>
+                                <p style="margin: 5% 15%; font-weight: bold; color: #337B31">ESTUDIANTES</p>
+                                <img src="img/iconos/flecha1.jpg"><a href="#"> Enviar correo a estudiantes</a>
+                             </td>
                         </tr>
                         <tr>
                             <td> <img src="img/iconos/flecha1.jpg"><a href="#"> Editar sección</a></td>
-                           
+                           <td><img src="img/iconos/flecha1.jpg"><a href="#"> Alumnos matriculados</a></td>
                         </tr>
                         <tr>
                             <td><img src="img/iconos/flecha1.jpg"><a href="#"> Eliminar sección</a></td>
-                        </tr>
-                        <tr>
-                            <td><img src="img/iconos/flecha1.jpg"><a href="#"> Enviar correo a estudiantes</a> </td>
-                        </tr>
-                        <tr>
-                            <td><img src="img/iconos/flecha1.jpg"><a href="#"> Alumnos matriculados</a></td>
-                        </tr>
-                        <tr>
                             <td><img src="img/iconos/flecha1.jpg"><a href="#"> Alumnos en lista de espera</a> </td>
                         </tr>
                         <tr>
@@ -130,16 +132,121 @@
 
                     </table>                         
             </div>
-    </section>
+        </section>
 
-    <section class="footer" style="margin: 0">
-        <div id="derechos" style="padding:10px">
-            <p>© Derechos Reservados UNAH 2018</p>
-            <a href="#" style="color: #fff">Dirección Ejecutiva de Gestión de Tecnología (DEGT)</a>                  
-        </div>
-    </section>
-
-
-
+        <section class="footer" style="margin: 0">
+            <div id="derechos" style="padding:10px">
+                <p>© Derechos Reservados UNAH 2018</p>
+                <a href="#" style="color: #fff">Dirección Ejecutiva de Gestión de Tecnología (DEGT)</a>                  
+            </div>
+        </section>
     </div>
+<!--********************************VENTANA MODAL*****************************************-->
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+        
+          <!-- Modal content-->
+        <div class="modal-content" style="background-color:#183F60">
+            <div class="modal-header">
+              <h4 class="modal-title" style="color:white"><b> CREAR NUEVA SECCIÓN</b></h4>
+            </div>
+            <div class="modal-body" style="background-color:rgb(255, 255, 255);" class="col-12 col-sm-12 col-md-6 col-lg-6 form-control">
+              
+                            <div class="row" style="margin-left:auto; margin-right:auto">         
+                          <!--      <div class="col-12" style="margin-bottom:2%">
+                                    <input class="form-control" type="text" placeholder="Asignatura" id="txt-asignatura">                               
+                                </div> -->
+                                <div class="col-12" style="margin-bottom:2%">
+                                    <select name="dias" id="dias" class="form-control">
+                                        <option value="Dias">Seleccione la Facultad</option>
+                                        <option value="Ingenieria">Facultad de Ingeniería</option>
+                                        <option value="Salud">Facultad de Ciencias Médicas</option>
+                                        <option value="juridicas">Facultad de Ciencias Jurídicas</option>
+                                        <option value="Ciencias">Facultad de Ciencias</option>
+                                        <option value="economia">Facultad de Ciencias Económicas, Administrativas y Contables</option>
+                                        <option value="humanidades">Facultad de Humanidades y Artes</option>
+                                        <option value="Espaciales">Facultad de Ciencias Espaciales</option>
+                                        <option value="Odontologia">Facultad de Odontología</option>
+                                        <option value="Quimica">Facultad de Química y Farmacia</option>
+                                        <option value="Sociales">Facultad de Ciencias Sociales</option>
+                                      </select>
+                                </div>
+    
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:2%">
+                                    <input class="form-control" type="text" placeholder="Código" id="txt-codigo">
+                                </div>
+    
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:2%">
+                                    <input class="form-control" type="text" placeholder="Sección" id="txt-seccion">
+                                </div>
+    
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:2%">
+                                    <input class="form-control" type="password" placeholder="Nº Aula" id="txt-aula">
+                                </div>
+    
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:2%">
+                                    <input class="form-control" type="text" placeholder="Nº cupos" id="txt-cupos">
+                                </div>
+    
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:2%">
+                                    <input class="form-control" type="text" placeholder="Hora de Inicio" id="h-inicio">
+                                </div>
+                                
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:2%">
+                                    <input class="form-control" type="text" placeholder="Hora de Finalizacion" id="h-fin">
+                                </div>
+    
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:2%">
+                                    <select name="dias" id="dias" class="form-control">
+                                        <option value="Dias">Seleccione los Días</option>
+                                        <option value="LuMaMiJuVi">LuMaMiJuVi</option>
+                                        <option value="LuMaMi">LuMaMi</option>
+                                        <option value="LuMiVi">LuMiVi</option>                                   
+                                        <option value="LuMi">LuMi</option>
+                                        <option value="MaJu">MaJu</option>
+                                        <option value="Sa">Sa</option>
+                                      </select>
+                                </div>
+    
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:2%">                  
+                                    <select name="Edificio" id="edificio" class="form-control">
+                                      <option value="edificio">Seleccione el Edificio</option>
+                                      <option value="B2">B2</option>
+                                      <option value="B1">B1</option>
+                                      <option value="E1">E1</option>
+                                      <option value="A1">A1</option>
+                                      <option value="A2">A2</option>
+                                      <option value="D1">D1</option>
+                                      <option value="F1">F1</option>
+                                      <option value="C1">C1</option>
+                                      <option value="C2">C2</option>
+                                      <option value="C3">C3</option>
+                                      <option value="J1">J1</option>
+                                      <option value="K1">K1</option>
+                                      <option value="G1">G1</option>
+                                      <option value="H1">H1</option>
+                                      <option value="I1">I1</option>
+                                      <option value="Polideportivo">Palacio de los Deportes</option>
+                                      <option value="Canchas">Aire libre</option>
+                                    </select>
+                                </div>
+    
+                                <div class="col-12" style="margin-bottom:2%">
+                                    <input class="form-control" type="text" placeholder="Profesor" id="txt-profesor">
+                                </div>                                     
+                                <br>
+                                
+                            </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success">Crear</button>
+              <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+            </div>                  
+        </div>
+    </div>
+      
+</div>
+<!--********************************FIN VENTANA MODAL*****************************************-->
+
 </body>
