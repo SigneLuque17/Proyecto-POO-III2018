@@ -154,12 +154,10 @@
             <div class="modal-body" style="background-color:rgb(255, 255, 255);" class="col-12 col-sm-12 col-md-6 col-lg-6 form-control">
               
                             <div class="row" style="margin-left:auto; margin-right:auto">         
-                          <!--      <div class="col-12" style="margin-bottom:2%">
-                                    <input class="form-control" type="text" placeholder="Asignatura" id="txt-asignatura">                               
-                                </div> -->
+                        
                                 <div class="col-12" style="margin-bottom:2%">
-                                    <select name="dias" id="dias" class="form-control">
-                                        <option value="Dias">Seleccione la Facultad</option>
+                                    <select name="Facultad" id="facultad" class="form-control">
+                                        <option value="Facultad">Seleccione la Facultad</option>
                                         <option value="Ingenieria">Facultad de Ingeniería</option>
                                         <option value="Salud">Facultad de Ciencias Médicas</option>
                                         <option value="juridicas">Facultad de Ciencias Jurídicas</option>
@@ -172,13 +170,30 @@
                                         <option value="Sociales">Facultad de Ciencias Sociales</option>
                                       </select>
                                 </div>
+                                <div class="col-12" style="margin-bottom:2%">
+                                        <select name="Carrera" id="carrera" class="form-control" disabled>
+                                            <option value="facultad">Seleccione la Carrera</option>
+                                            <option value="Sistemas">Ingenieria en Sistemas</option>
+                                            <option value="Industrial">Ingenieria Industrial</option>
+                                            <option value="Civil">Ingenieria Civil</option>
+                                            <option value="Mecanica">Ingenieria Mecánica</option>                                    
+                                            <option value="Electrica">Ingenieria Eléctrica</option>
+                                            <option value="Quimica">Ingenieria Química</option>                                          
+                                          </select>
+                                    </div>
+
+
     
-                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:2%">
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" style="margin-bottom:2%">
                                     <input class="form-control" type="text" placeholder="Código" id="txt-codigo">
                                 </div>
     
-                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:2%">
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" style="margin-bottom:2%">
                                     <input class="form-control" type="text" placeholder="Sección" id="txt-seccion">
+                                </div>
+
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" style="margin-bottom:2%">
+                                    <input class="form-control" type="text" placeholder="Nº de UV" id="txt-UV">
                                 </div>
     
                                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:2%">
