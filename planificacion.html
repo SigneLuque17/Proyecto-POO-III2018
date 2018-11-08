@@ -119,11 +119,11 @@
                              </td>
                         </tr>
                         <tr>
-                            <td> <img src="img/iconos/flecha1.jpg"><a href="#"> Editar sección</a></td>
+                            <td> <img src="img/iconos/flecha1.jpg"><button style="font-size: 1em; color:black" type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal2">Editar Sección</button></td>
                            <td><img src="img/iconos/flecha1.jpg"><a href="#"> Alumnos matriculados</a></td>
                         </tr>
                         <tr>
-                            <td><img src="img/iconos/flecha1.jpg"><a href="#"> Eliminar sección</a></td>
+                            <td><img src="img/iconos/flecha1.jpg"><button style="font-size: 1em; color:black" type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal3">Eliminar Sección</button></td>
                             <td><img src="img/iconos/flecha1.jpg"><a href="#"> Alumnos en lista de espera</a> </td>
                         </tr>
                         <tr>
@@ -141,10 +141,10 @@
             </div>
         </section>
     </div>
-<!--********************************VENTANA MODAL*****************************************-->
+<!--********************************VENTANA MODAL 1*****************************************-->
 <!-- Modal -->
 <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
+    <div class="modal-dialog" >
         
           <!-- Modal content-->
         <div class="modal-content" style="background-color:#183F60">
@@ -300,6 +300,123 @@
     </div>
       
 </div>
-<!--********************************FIN VENTANA MODAL*****************************************-->
+
+
+<!--********************************VENTANA MODAL 2*****************************************-->
+<!-- Modal -->
+<div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+        
+          <!-- Modal content-->
+        <div class="modal-content" style="background-color:#183F60">
+            <div class="modal-header">
+              <h4 class="modal-title" style="color:white"><b> EDITAR SECCIÓN</b></h4>
+            </div>
+            <div class="modal-body" style="background-color:rgb(255, 255, 255);" class="col-12 col-sm-12 col-md-6 col-lg-6 form-control">
+              
+                            <div class="row" style="margin-left:auto; margin-right:auto">         
+    
+                                <div class="col-xl-6 col-lg-4 col-md-6 col-sm-12 col-12" style="margin-bottom:2%">
+                                    <input class="form-control" type="text" placeholder="Código de clase" id="txt-codigo2">
+                                </div>
+    
+                                <div class="col-xl-6 col-lg-4 col-md-6 col-sm-12 col-12" style="margin-bottom:2%">
+                                    <input class="form-control" type="text" placeholder="Ingrese la Sección" id="txt-seccion2">
+                                </div>
+
+    
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:2%">
+                                    <input class="form-control" type="password" placeholder="Nº Aula" id="txt-aula2">
+                                </div>
+    
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:2%">
+                                    <input class="form-control" type="text" placeholder="Nº cupos" id="txt-cupos2">
+                                </div>
+    
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:2%">
+                                    <input class="form-control" type="text" placeholder="Hora de Inicio" id="h-inicio2">
+                                </div>
+                                
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:2%">
+                                    <input class="form-control" type="text" placeholder="Hora de Finalizacion" id="h-fin2">
+                                </div>
+    
+                                
+    
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom:2%">                  
+                                    <select name="Edificio" id="edificio2" class="form-control">
+                                      <option value="edificio">Seleccione el Edificio</option>
+                                      <option value="B2">B2</option>
+                                      <option value="B1">B1</option>
+                                      <option value="E1">E1</option>
+                                      <option value="A1">A1</option>
+                                      <option value="A2">A2</option>
+                                      <option value="D1">D1</option>
+                                      <option value="F1">F1</option>
+                                      <option value="C1">C1</option>
+                                      <option value="C2">C2</option>
+                                      <option value="C3">C3</option>
+                                      <option value="J1">J1</option>
+                                      <option value="K1">K1</option>
+                                      <option value="G1">G1</option>
+                                      <option value="H1">H1</option>
+                                      <option value="I1">I1</option>
+                                      <option value="Polideportivo">Palacio de los Deportes</option>
+                                      <option value="Canchas">Aire libre</option>
+                                    </select>
+                                </div>
+    
+                                <div class="col-12" style="margin-bottom:2%">
+                                    <input class="form-control" type="text" placeholder="Profesor" id="txt-profesor2">
+                                </div>                                     
+                                <br>
+                                
+                            </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success">Guardar cambios</button>
+              <button type="button" class="btn btn-success" data-dismiss="modal">Cerrar</button>
+            </div>                  
+        </div>
+    </div>
+      
+</div>
+
+
+<!--********************************VENTANA MODAL 3*****************************************-->
+<!-- Modal -->
+<div class="modal fade" id="myModal3" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        
+          <!-- Modal content-->
+        <div class="modal-content" style="background-color:#183F60">
+            <div class="modal-header">
+              <h4 class="modal-title" style="color:white"><b> ELIMINAR SECCIÓN</b></h4>
+            </div>
+            <div class="modal-body" style="background-color:rgb(255, 255, 255);" class="col-12 col-sm-12 col-md-6 col-lg-6 form-control">
+              
+                            <div class="row" style="margin-left:auto; margin-right:auto">         
+    
+                                <div class="col-xl-6 col-lg-4 col-md-6 col-sm-12 col-12" style="margin-bottom:2%">
+                                    <input class="form-control" type="text" placeholder="Código de clase" id="txt-codigo2">
+                                </div>
+    
+                                <div class="col-xl-6 col-lg-4 col-md-6 col-sm-12 col-12" style="margin-bottom:2%">
+                                    <input class="form-control" type="text" placeholder="Ingrese la Sección" id="txt-seccion2">
+                                </div>                                    
+                                <br>
+                                
+                            </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success">Eliminar Sección</button>
+              <button type="button" class="btn btn-success" data-dismiss="modal">Cerrar</button>
+            </div>                  
+        </div>
+    </div>
+      
+</div>
+
+
 
 </body>
