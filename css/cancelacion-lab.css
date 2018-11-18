@@ -229,8 +229,18 @@ font-weight: bold;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
  }
+#table1{
+    margin-left: auto;
+    margin-right: auto;
+}
+ #info{
+    
+     margin: 0 0 0 0;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
  section{
-     background-color: #006699;;
+     background-color: #006699;
      color: #fff;
      border-radius: 1px;
      margin: 35px 5px 2px 5px;
@@ -247,8 +257,4 @@ strong{
     margin-left: 2%;
 margin-right: 2%;
 font-size: 12px;
-}
-#table1{
-    margin-left: auto;
-    margin-right: auto;
 }
