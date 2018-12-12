@@ -5,7 +5,7 @@ class Facultad{
 
 	public function __construct(
 		$nombre = null,
-		$abreviatura = null,
+		$abreviatura = null
 	){
 
 		$this->nombre = $nombre;
@@ -16,7 +16,7 @@ class Facultad{
 	public function __toString(){
 		$var = "Facultad{"
 		."nombre: ".$this->nombre." , "
-		."abreviatura: ".$this->abreviatura." , "
+		."abreviatura: ".$this->abreviatura;
 		return $var."}";
 	}
 
