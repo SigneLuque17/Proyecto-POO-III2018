@@ -1,4 +1,4 @@
-var usuarios = []; //Arreglo vacio
+
 //=====================================================================================================================
 
 var centros = [
@@ -43,7 +43,7 @@ var carreras = [
 })();
 
 //========================================================VALIDACIONES=============================================================
-
+var usuarios = []; //Arreglo vacio
 
 function registrar() {
     validarCampoVacio("txt-nombre");
@@ -53,12 +53,7 @@ function registrar() {
     validarCampoVacio("mail");
     validarCampoVacio("contraseña");
     if (
-        /* !validarCampoVacio(document.getElementById("txt-nombre")) &&
-         !validarCampoVacio(document.getElementById("txt-apellido")) &&
-         !validarCampoVacio(document.getElementById("cuenta")) &&
-         !validarCampoVacio(document.getElementById("identidad")) &&
-         !validarCampoVacio(document.getElementById("contraseña")) &&
-         !validarCampoVacio(document.getElementById("mail")) */
+        
         validarCampoVacio("txt-nombre") &&
         validarCampoVacio("txt-apellido") &&
         validarCampoVacio("cuenta") &&
@@ -106,18 +101,3 @@ function validarCampoVacio(id) {
         return true;
     }
 }
-/*
-function validarCampoVacio(campo){
-    if (campo.value==""){
-        campo.classList.add("campo-invalido");      
-        return false;
-    }else{
-        campo.classList.add("campo-valido");
-    return true;
-    }
-}*/
-/*
-$("#carrera").change(function(){
-    var Carrera = $("#carrera").val();
-
-}); */
