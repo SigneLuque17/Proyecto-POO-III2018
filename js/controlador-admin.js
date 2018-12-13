@@ -109,7 +109,9 @@ $("#crear-clase").click(function(){
 	});
 });
 
+
 //==========================================obtener carreras=================================
+
 $("#sl-facultad").change(function(){
 	
 	//Esta funcion se ejecuta cada vez que el usuario selecciona o cambia un elemento de la lista.	
