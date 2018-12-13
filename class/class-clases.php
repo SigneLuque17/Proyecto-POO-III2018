@@ -2,23 +2,27 @@
 class Clase{
 	private $nombre;
     private $codigo;
-    private $facu;
+    private $uv;
     private $carrera;
+    private $facu;
+    
 
 	public function __construct(
 		$nombre = null,
         $codigo = null,
         $uv = null,
-        $facu = null,
-        $carrera = null
+        $carrera = null,
+        $facu = null
+        
 		
 	){
 
 		$this->nombre = $nombre;
         $this->codigo = $codigo;
         $this->uv = $uv;
-        $this->facu = $facu;
         $this->carrera = $carrera;
+        $this->facu = $facu;
+        
 		
 	}
 
@@ -27,8 +31,8 @@ class Clase{
 		."nombre: ".$this->nombre." , "
         ."codigo: ".$this->codigo." , "
         ."uv: ".$this->uv." , "
-        ."facu: ".$this->facu." , "
-		."carrera: ".$this->carrera;
+        ."carrera:".$this->carrera." , "
+		."facu:".$this->facu;
 		return $var."}";
 	}
 
@@ -81,20 +85,21 @@ class Clase{
 		}
 		return json_encode($registros);
     }
-    
+ //"../data/carreras/".$_POST["facultad"]."/".$_POST["carrera"].".json"
     public function guardarClase(){
         $respuesta = array();
         if(isset($_POST["clase"])){
-            if(!file_exists("../data/carreras/".$_POST["facultad"]."/".$_POST["carrera"].".json")){
-                $archivo = fopen("../data/carreras/".$_POST["facultad"]."/".$_POST["carrera"].".json", "w");
+            if(!file_exists("../data/carreras/".$_POST["facultad"]."/sistemas.json")){
+                $archivo = fopen("../data/carreras/".$_POST["facultad"]."/sistemas.json", "w");
             }
-            $archivo = fopen("../data/carreras/".$_POST["facultad"]."/".$_POST["carrera"].".json", "a+");
+            $archivo = fopen("../data/carreras/".$_POST["facultad"]."/sistemas.json", "a+");
            
-			$registro["carrera"] = $this->nombre;
-            $registro["codigo"] = $this->cod;
+			$registro["clase"] = $this->nombre;
+            $registro["codigo"] = $this->codigo;
             $registro["uv"] = $this->uv;
-            $registro["facultad"] = $this->facu;
             $registro["carrera"] = $this->carrera;
+            $registro["facultad"] = $this->facu;
+            
 			
 
             fwrite($archivo, json_encode($registro)."\n");

@@ -6,7 +6,7 @@
          
         break;
         case 2:
-           include("../class/class-carreras.php");   
+           include("../class/class-clases.php");   
            $l = new Clase($_POST["clase"],$_POST["codigo"], $_POST["uv"],$_POST["carrera"], $_POST["facultad"]);
            echo $l->guardarClase();
         

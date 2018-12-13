@@ -22,6 +22,7 @@ $(document).ready(function(){
 			console.error(error);
 		}
 	});
+});
 //*************obtener carreras ****/
 /*	$.ajax({
 		url:"ajax/carreras.php?accion=1",			//la accion 1 es para obtener las carreras
@@ -84,10 +85,10 @@ $("#crear-carrera").click(function(){
 	});
 });
 
-//================================ registrar carreras=======================
+//================================ registrar clases=======================
 $("#crear-clase").click(function(){
 	var parametros="clase="+$("#txt-nombreClase").val()+"&"
-				  +"codigo="+$("#txt-codigo").val()+"&"
+				  +"codigo="+$("#txt-cod").val()+"&"
 				  +"uv="+$("#txt-uv").val()+"&"
 				  +"carrera="+$("#carrera-asignada").val()+"&"
 				  +"facultad="+$("#sl-facultad").val();
@@ -109,7 +110,7 @@ $("#crear-clase").click(function(){
 });
 
 //==========================================obtener carreras=================================
-$("#sl-facultad").change(function(){
+/*$("#sl-facultad").change(function(){
 	//Esta funcion se ejecuta cada vez que el usuario selecciona o cambia un elemento de la lista.	
 	$.ajax({
 		url:"ajax/clases.php?accion=1",			//la accion 1 es para obtener las carreras
@@ -129,6 +130,6 @@ $("#sl-facultad").change(function(){
 			$("#jefe").append(error.responseText);
 		}
 	});
-});
-});
+});*/
+
 
