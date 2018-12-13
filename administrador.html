@@ -160,12 +160,13 @@
                                     </div>  
 
                                     <br>  
-                                    <button class="btn btn-success centrar"  type="button" value="Crear">Crear</button>                            
+                                    <button class="btn btn-success centrar"  type="button" value="CrearCentro" id="crear-centro">Crear</button>                            
                                 </div>
                 </div>                                
             </div>
         </div>
           
+        
     </div>
 <!--********************************FIN VENTANA MODAL CENTRO REGIONAL*****************************************-->
 <!--********************************VENTANA MODAL CARRERA*****************************************-->
@@ -182,17 +183,21 @@
                 <div class="modal-body" style="background-color:rgb(255, 255, 255);" class="col-12 col-sm-12 col-md-6 col-lg-6 form-control">
                   
                                 <div class="row centrar">               
-                                    <div class="col-12" style="margin-bottom:2%">
+                                    <div class="col-6" style="margin-bottom:2%">
                                         <input class="form-control" type="text" placeholder="Nombre" id="txt-nombreCarrera">                                       
                                     </div>
 
+                                    <div class="col-6" style="margin-bottom:2%">
+                                        <input class="form-control" type="text" placeholder="Código" id="txt-codigo">                                       
+                                    </div>
+
                                     <div class="col-12" style="margin-bottom:2%">
-                                        <select name="facultadAsignada" id="facultad-asignada">
+                                        <select class="form-control" name="facultadAsignada" id="facultad-asignada">
                                             <!--deplegar lista de facultades-->
                                         </select>                                       
                                     </div> 
                                     <br>  
-                                    <button class="btn btn-success centrar"  type="button" value="Buscar">Crear</button>                            
+                                    <button class="btn btn-success centrar"  type="button" value="crearCarrera" id="crear-carrera">Crear</button>                            
                                 </div>
                 </div>                                
             </div>
@@ -226,19 +231,19 @@
                                 </div> 
 
                                 <div class="col-12" style="margin-bottom:2%">
-                                    <select name="facultadAsignada" id="sl-facultad">
+                                    <select class="form-control" name="facultadasignada" id="sl-facultad">
                                         <!--deplegar lista de facultades-->
                                     </select>                                       
                                 </div>
 
                                 <div class="col-12" style="margin-bottom:2%">
-                                    <select name="carreraAsignada" id="carrera-asignada" disabled>
+                                    <select class="form-control" name="carreraAsignada" id="carrera-asignada">
                                         
                                     </select>                                      
                                 </div>  
 
                                 <br>  
-                                <button class="btn btn-success centrar"  type="button" value="Buscar">Buscar</button>                            
+                                <button class="btn btn-success centrar"  type="button" value="crearClase" id="crear-clase">Crear</button>                            
                             </div>
             </div>                                
         </div>

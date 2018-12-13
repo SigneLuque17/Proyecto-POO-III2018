@@ -1,50 +1,69 @@
+//============================================obtener facultades====================================================================
+$(document).ready(function(){
+	console.log("Se ha cargado el DOM");
+	$.ajax({
+		url:"ajax/facultad.php",
+		method:"GET",
+		dataType:"json",
+		success:function(respuesta){
+            console.log(respuesta);
+            $("#facultad").append(`<option value="seleccionar">Seleccione la faculdad</option>`);
+			for (var i =0;i<respuesta.length;i++)
+                $("#facultad").append(`
+                <option value="${respuesta[i].abreviatura}">${respuesta[i].Nombre}</option>`
+                );
+		},
+		error:function(error){
+			console.error(error);
+		}
+	});
+});
 
-//=====================================================================================================================
+//============================================obtener centros=========================================================================
+$(document).ready(function(){
+	console.log("Se ha cargado el DOM");
+	$.ajax({
+		url:"ajax/centros.php?accion=1",
+		method:"GET",
+		dataType:"json",
+		success:function(respuesta){
+            console.log(respuesta);
+			$("#centro").append(`<option value="seleccionar">Seleccione el centro</option>`);
+			for (var i =0;i<respuesta.length;i++){
+                $("#centro").append(`
+                <option value="${respuesta[i].centro}">${respuesta[i].centro}</option>`
+				);	
+			}
+		},
+		error:function(error){
+			console.error(error);
+		}
+	});
+});
 
-var centros = [
-    { nombreCentro: "Ciudad Universitaria - CU" },
-    { nombreCentro: "UNAH Valle de Sula" },
-    { nombreCentro: "UNAH-TEC Danli" },
-    { nombreCentro: "UNAH-TEC AGUÁN" },
-    { nombreCentro: "UNAH-CURC" },
-    { nombreCentro: "UNAH-CURLA" },
-    { nombreCentro: "UNAH-CURLP" },
-    { nombreCentro: "UNAH-CUROC" },
-    { nombreCentro: "UNAH-CURNO" }
-];
-
-//Funcion con autoejecucion (Funcion anonima)
-(function() {
-    document.getElementById("centro").innerHTML = `<option value="centro">Seleccione el centro universitario</option>`;
-    for (var i = 0; i < centros.length; i++) {
-        document.getElementById("centro").innerHTML +=
-            `<option value="${centros[i].nombreCentro}">${centros[i].nombreCentro}</option>`;
-    }
-})();
-
-//=====================================================================================================================
-
-var carreras = [
-    { nombreCarrera: "Ingenieria en Sistemas" },
-    { nombreCarrera: "Ingenieria Mecánica" },
-    { nombreCarrera: "Ingenieria Civil" },
-    { nombreCarrera: "Ingenieria Química" },
-    { nombreCarrera: "Ingenieria Industrial" },
-    { nombreCarrera: "Ingenieria Eléctrica" }
-];
-
-//Funcion con autoejecucion (Funcion anonima)
-(function() {
-    document.getElementById("carrera").innerHTML = `<option value="Carrera">Seleccione la carrera a estudiar</option>`;
-    for (var i = 0; i < carreras.length; i++) {
-        document.getElementById("carrera").innerHTML +=
-            `<option value="${carreras[i].nombreCarrera}">${carreras[i].nombreCarrera}</option>`;
-    }
-})();
+//====================================================obtener carreras=================================================================
+$(document).ready(function(){
+	console.log("Se ha cargado el DOM");
+	$.ajax({
+		url:"ajax/carrera.php?accion=1",
+		method:"GET",
+		dataType:"json",
+		success:function(respuesta){
+            console.log(respuesta);
+			$("#carrera").append(`<option value="seleccionar">Seleccione la carrera</option>`);
+			for (var i =0;i<respuesta.length;i++){
+                $("#carrera").append(`
+                <option value="${respuesta[i].carrera}">${respuesta[i].carrera}</option>`
+				);	
+			}
+		},
+		error:function(error){
+			console.error(error);
+		}
+	});
+});
 
 //========================================================VALIDACIONES=============================================================
-var usuarios = []; //Arreglo vacio
-
 function registrar() {
     validarCampoVacio("txt-nombre");
     validarCampoVacio("txt-apellido");
@@ -62,7 +81,9 @@ function registrar() {
         validarCampoVacio("contraseña")
 
     ) {
-        var usuario = {
+//====================================guardar alumnos=========================================
+var usuarios = []; //Arreglo vacio
+    var usuario = {
             nombre: document.getElementById("txt-nombre").value,
             apellido: document.getElementById("txt-apellido").value,
             numCuenta: document.getElementById("cuenta").value,
@@ -88,7 +109,7 @@ function registrar() {
                     `;
     }
 }
-
+/////////////////////////////////////////////////////////////////////////////////////////////
 
 function validarCampoVacio(id) {
     if (document.getElementById(id).value == "") {
