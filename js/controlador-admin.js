@@ -110,7 +110,8 @@ $("#crear-clase").click(function(){
 });
 
 //==========================================obtener carreras=================================
-/*$("#sl-facultad").change(function(){
+$("#sl-facultad").change(function(){
+	
 	//Esta funcion se ejecuta cada vez que el usuario selecciona o cambia un elemento de la lista.	
 	$.ajax({
 		url:"ajax/clases.php?accion=1",			//la accion 1 es para obtener las carreras
@@ -130,6 +131,6 @@ $("#crear-clase").click(function(){
 			$("#jefe").append(error.responseText);
 		}
 	});
-});*/
+});
 
 

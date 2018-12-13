@@ -77,14 +77,14 @@ class Clase{
 
 
 
-	public static function obtenerCarrera(){
+/*	public static function obtenerCarrera(){
 		$archivo = fopen("../data/carreras/".$_POST["facultad"]."/carreras.json", "r");
 		$registros = array();
 		while(($linea=fgets($archivo))){
 			$registros[] = json_decode($linea, true);
 		}
 		return json_encode($registros);
-    }
+    }*/
  //"../data/carreras/".$_POST["facultad"]."/".$_POST["carrera"].".json"
     public function guardarClase(){
         $respuesta = array();
