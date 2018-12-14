@@ -22,7 +22,7 @@ class Jefe{
 	}
 
 	public function __toString(){
-		$var = "Carrera{"
+		$var = "Jefe{"
 		."nombre: ".$this->nombre." , "
         ."num: ".$this->num." , "
         ."pass: ".$this->pass." , "

@@ -48,6 +48,15 @@ class Carrera{
 	}
 
 	
+	public static function obtenerCarrera(){	
+	$archivo = fopen("../data/carreras/".$_GET["facultad"]."/carreras.json", "r");
+	$registros = array();
+	while(($linea=fgets($archivo))){
+		$registros[] = json_decode($linea,true);
+	}
+	return json_encode($registros);
+	}
+
 	public function guardarCarrera(){
         $respuesta = array();
         if(isset($_POST["carrera"])){

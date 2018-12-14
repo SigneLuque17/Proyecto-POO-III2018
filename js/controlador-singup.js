@@ -42,27 +42,30 @@ $(document).ready(function(){
 });
 
 //====================================================obtener carreras=================================================================
-$(document).ready(function(){
-	console.log("Se ha cargado el DOM");
+$("#facultad").change(function(){
+	var facultad = $("#facultad").val();
+	
+	//Esta funcion se ejecuta cada vez que el usuario selecciona o cambia un elemento de la lista.	
 	$.ajax({
-		url:"ajax/carrera.php?accion=1",
+		url:"ajax/carreras.php?accion=1",			//la accion 1 es para obtener las carreras
 		method:"GET",
+		data: 'facultad='+facultad,
 		dataType:"json",
 		success:function(respuesta){
             console.log(respuesta);
 			$("#carrera").append(`<option value="seleccionar">Seleccione la carrera</option>`);
 			for (var i =0;i<respuesta.length;i++){
                 $("#carrera").append(`
-                <option value="${respuesta[i].carrera}">${respuesta[i].carrera}</option>`
-				);	
+                <option value="${respuesta[i].codigo}">${respuesta[i].carrera}</option>`
+				);
 			}
 		},
 		error:function(error){
 			console.error(error);
+			$("#jefe").append(error.responseText);
 		}
 	});
 });
-
 //========================================================VALIDACIONES=============================================================
 function registrar() {
     validarCampoVacio("txt-nombre");

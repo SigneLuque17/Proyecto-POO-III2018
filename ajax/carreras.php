@@ -3,7 +3,7 @@
         case 1:
             include("../class/class-carreras.php");
             echo Carrera::obtenerCarrera();
-         
+            
         break;
         case 2:
            include("../class/class-carreras.php");   

@@ -25,7 +25,7 @@ class Coordinador{
 	}
 
 	public function __toString(){
-		$var = "Carrera{"
+		$var = "Coordinador{"
 		."nombre: ".$this->nombre." , "
         ."num: ".$this->num." , "
         ."pass: ".$this->pass." , "
