@@ -10,7 +10,7 @@ $(document).ready(function(){
 			$("#facu").append(`<option value="seleccionar">Seleccione la faculdad</option>`);
 			for (var i =0;i<respuesta.length;i++){
                 $("#facu").append(`
-                <option value="${respuesta[i].abreviatura}">${respuesta[i].Nombre}</option>`
+                <option value="${respuesta[i].Nombre}">${respuesta[i].Nombre}</option>`
 				);
 			}
 		},

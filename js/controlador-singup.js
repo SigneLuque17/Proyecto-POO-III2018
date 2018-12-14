@@ -56,7 +56,7 @@ $("#facultad").change(function(){
 			$("#carrera").append(`<option value="seleccionar">Seleccione la carrera</option>`);
 			for (var i =0;i<respuesta.length;i++){
                 $("#carrera").append(`
-                <option value="${respuesta[i].codigo}">${respuesta[i].carrera}</option>`
+                <option value="${respuesta[i].carrera}">${respuesta[i].carrera}</option>`
 				);
 			}
 		},
@@ -66,8 +66,37 @@ $("#facultad").change(function(){
 		}
 	});
 });
+
+ //====================================guardar alumnos=========================================
+ $("#registrar-alumno").click(function(){
+    var parametros="nombre="+$("#txt-nombre").val()+"&"
+                  +"apellido="+$("#txt-apellido").val()+"&"
+                  +"cuenta="+$("#cuenta").val()+"&"
+                  +"ID="+$("#identidad").val()+"&"
+                  +"pass="+$("#contraseña").val()+"&"
+                  +"correo="+$("#mail").val()+"&"
+                  +"facultad="+$("#facultad").val()+"&"
+                  +"carrera="+$("#carrera").val()+"&"
+                  +"centro="+$("#centro").val();
+
+    console.log(parametros);
+    $.ajax({
+        url:"ajax/alumnos.php?accion=2",		//accion=2 es para guardar las carreras
+        method:"POST",
+        dataType:"json",
+        data:parametros,
+        success:function(respuesta){
+            console.log(respuesta);
+        },
+        error:function(error){
+            console.error(error);
+            $("#jefe").append(error.responseText);
+        }
+    });
+    });
+
 //========================================================VALIDACIONES=============================================================
-function registrar() {
+/*function registrar() {
     validarCampoVacio("txt-nombre");
     validarCampoVacio("txt-apellido");
     validarCampoVacio("cuenta");
@@ -83,37 +112,8 @@ function registrar() {
         validarCampoVacio("mail") &&
         validarCampoVacio("contraseña")
 
-    ) {
-//====================================guardar alumnos=========================================
-var usuarios = []; //Arreglo vacio
-    var usuario = {
-            nombre: document.getElementById("txt-nombre").value,
-            apellido: document.getElementById("txt-apellido").value,
-            numCuenta: document.getElementById("cuenta").value,
-            numId: document.getElementById("identidad").value,
-            password: document.getElementById("contraseña").value,
-            correo: document.getElementById("mail").value,
-            carrera: document.getElementById("carrera").value,
-            centro: document.getElementById("centro").value
-        };
-        usuarios.push(usuario); //Agregando un nuevo objeto usuario
-        console.log(usuarios);
-
-
-        document.getElementById("informacion").innerHTML +=
-            `
-                    <p><b> INFORMACION DEL ESTUDIANTE </b></p>             
-                       <p>${usuario.nombre} ${usuario.apellido}</p>
-                       <p>Su numero de cuenta es ${usuario.numCuenta}  </p>
-                       <p>Su numero de identidad es ${usuario.numId}</p>
-                       <p>Estudia ${usuario.carrera} </p>
-                       <p>Estudia en ${usuario.centro}</p>
-                       <p>Su direccion de correo electronico es ${usuario.correo}</p>
-                    `;
-    }
-}
+    ) 
 /////////////////////////////////////////////////////////////////////////////////////////////
-
 function validarCampoVacio(id) {
     if (document.getElementById(id).value == "") {
         document.getElementById(id).classList.remove("campo-valido");
@@ -125,3 +125,4 @@ function validarCampoVacio(id) {
         return true;
     }
 }
+}*/

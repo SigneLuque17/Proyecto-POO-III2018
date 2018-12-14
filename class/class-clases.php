@@ -79,11 +79,11 @@ class Clase{
  	public function guardarClase(){
         $respuesta = array();
         if(isset($_POST["clase"])){
-            if(!file_exists("../data/carreras/".$_POST["facultad"]."/sistemas.json")){
-                $archivo = fopen("../data/carreras/".$_POST["facultad"]."/sistemas.json", "w");
-            }
-            $archivo = fopen("../data/carreras/".$_POST["facultad"]."/sistemas.json", "a+");
-           
+			if(!file_exists("../data/carreras/".$_POST["facultad"]."/asignaturas/".$_POST["carrera"].".json")){
+				$archivo = fopen("../data/carreras/".$_POST["facultad"]."/asignaturas/".$_POST["carrera"].".json", "w");
+			}
+			$archivo = fopen("../data/carreras/".$_POST["facultad"]."/asignaturas/".$_POST["carrera"].".json", "a+");
+
 			$registro["clase"] = $this->nombre;
             $registro["codigo"] = $this->codigo;
             $registro["uv"] = $this->uv;
