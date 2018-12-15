@@ -4,7 +4,8 @@ class Clase{
     private $codigo;
     private $uv;
     private $carrera;
-    private $facu;
+	private $facu;
+	
     
 
 	public function __construct(
@@ -75,7 +76,17 @@ class Clase{
 		$this->uv = $uv;
 	}
 
-	
+	public static function obtenerClases(){	
+		$archivo = fopen("../data/carreras/".$_GET["facultad"]."/asignaturas/".$_GET["carrera"].".json", "r");
+		$registros = array();
+		while(($linea=fgets($archivo))){
+			$registros[] = json_decode($linea,true);
+		}
+		return json_encode($registros);
+	}
+
+
+
  	public function guardarClase(){
         $respuesta = array();
         if(isset($_POST["clase"])){

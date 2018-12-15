@@ -1,7 +1,9 @@
 <?php
     switch($_GET["accion"]){
         case 1:
-        
+            include("../class/class-clases.php");
+            echo Clase::obtenerClases();
+            
         break;
         case 2:
            include("../class/class-clases.php");   

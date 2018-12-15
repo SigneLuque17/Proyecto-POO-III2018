@@ -23,27 +23,7 @@ $(document).ready(function(){
 		}
 	});
 });
-//*************obtener carreras ****/
-/*	$.ajax({
-		url:"ajax/carreras.php?accion=1",			//la accion 1 es para obtener las carreras
-		method:"GET",
-		dataType:"json",
-		success:function(respuesta){
-			console.log(respuesta);
-			$("#carrera-asignada").append(`<option value="seleccionar">Seleccione la carrera</option>`);
-			for (var i =0;i<respuesta.length;i++){
-				$("#carrera-asignada").append(`
-				<option value="${respuesta[i].codigo}">${respuesta[i].carrera}</option>`
-				);
-			}
-		},
-		error:function(error){
-			console.error(error);
-			$("#jefe").append(error.responseText);
-		}
-	});
 
-});*/
 //================================ registrar centros=======================
 $("#crear-centro").click(function(){
 	var parametros=`centro=${$("#txt-nombreCentro").val()}&lugar=${$("#txt-ubicacion").val()}`;
