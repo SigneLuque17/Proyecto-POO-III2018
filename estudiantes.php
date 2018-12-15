@@ -1,3 +1,6 @@
+<?php 
+    include("validar-sesion.php");
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,6 +13,8 @@
     <link rel="stylesheet" href="css/FontAwesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="css//FontAwesome/css/all.css">
     <link rel="stylesheet" href="css/estudiantes.css">
+    <script src="js/jquery-3.3.1.min.js"></script>     
+    <script src="js/bootstrap.min.js"></script> 
 </head>
 <body>
     <div class="fondo">
@@ -103,9 +108,9 @@
     <br>
         <div style="margin-left: 15px;margin-top: 1%" id="derechos">
            <br>
-            <p> <b> Bienvenid@:</b>  ssssssssssssss</p>
-            <p>Tu cuenta de correo electrónico institucional es: ssssssss</p>
-            <p  style="float:left; margin-right: 1%" >Su número de identidad es ###########</p>
+            <p> <b> Bienvenid@:</b> <?php echo $_SESSION["nombre"]?>  <?php echo $_SESSION["apellido"];?></p>
+            <p>Tu cuenta de correo electrónico institucional es: <?php echo $_SESSION["mail"];?></p>
+            <p  style="float:left; margin-right: 1%" >Su número de identidad es <?php echo $_SESSION["id"];?></p>
         
             <figure id="photo" title="Si no esta correcto, favor abocarse con la Identidad Original y la fotocopia por ambos lados a la DIPP-Registro UNAH a nivel nacional" tooltip-dir="right">
                     <img src="img/iconos/read.png"/>
@@ -131,7 +136,7 @@
         <div class="parte3">
             <table>
                 <tr>
-                    <td> <img src="img/iconos/flecha1.jpg"> <a href="historial-academico.html"> Historial académico</a></td>
+                    <td> <img src="img/iconos/flecha1.jpg"> <a href="historial-academico.php"> Historial académico</a></td>
                     <td id="gris"> | Puedes ver tu historial académico</td>
                 </tr>
                 <tr>
@@ -139,7 +144,7 @@
                     <td id="gris">| Ahora puedes hacer tu solicitud de cambio de centro, carrera, <br> activación de pago para examen de reposición, historiales y certificaciones</td>
                 </tr>
                 <tr>
-                    <td><img src="img/iconos/flecha1.jpg"><a href="matricula.html"> Matrícula</a></td>
+                    <td><img src="img/iconos/flecha1.jpg"><a href="matricula.php"> Matrícula</a></td>
                     <td id="gris">| Realiza tu Matrícula del periodo</td>
                 </tr>
                 <tr>
@@ -181,8 +186,6 @@
             <a href="#" style="color: #fff">Dirección Ejecutiva de Gestión de Tecnología (DEGT)</a>                  
         </div>
     </section>
-
-
 </div>
 </body>
 </html>

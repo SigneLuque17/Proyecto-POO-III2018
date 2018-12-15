@@ -1,3 +1,6 @@
+<?php 
+    include("validar-sesion.php");
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -118,13 +121,13 @@
                             <p><b>Cuenta</b></p>
                         </td>
                         <td>
-                            <p>#########</p>
+                            <p><?php echo $_SESSION["cuenta"]?></p>
                         </td>
                         <td>
                             <p><b>Centro</b></p>
                         </td>
                         <td>
-                            <p>Ciudad Universitaria</p>
+                            <p><?php echo $_SESSION["centro"]?></p>
                         </td>
                     </tr>
 
@@ -133,7 +136,7 @@
                             <p><b>Nombre</b></p>
                         </td>
                         <td>
-                            <p>*************</p>
+                            <p><?php echo $_SESSION["nombre"]?>  <?php echo $_SESSION["apellido"];?></p>
                         </td>
                         <td>
                             <p><b>Indice Global</b></p>
@@ -148,7 +151,7 @@
                             <p><b>Carrera</b></p>
                         </td>
                         <td>
-                            <p>cccccccccccc</p>
+                            <p><?php echo $_SESSION["carrera"]?></p>
                         </td>
                         <td>
                             <p><b>Indice Periodo</b></p>

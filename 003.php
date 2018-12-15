@@ -1,3 +1,6 @@
+<?php 
+    include("validar-sesion.php");
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +12,8 @@
     <link rel="stylesheet" href="css/FontAwesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="css//FontAwesome/css/all.css">
     <link rel="stylesheet" href="css/forma03.css">
-    
+    <script src="js/jquery-3.3.1.min.js"></script>     
+    <script src="js/bootstrap.min.js"></script> 
 </head>
 <body>
  <div class="fondo">
@@ -136,21 +140,21 @@
                 <a><img src="img/anuncios/profile.jpg " style="height:130px; width:125px;"></a>
                     </td>
                     <td>Cuenta:</td>
-                    <td><a>Lorem, ipsum.</a></td>
+                    <td><?php echo $_SESSION["cuenta"]?></td>
                     <td >Centro:</td>
-                    <td ><a>Lorem, ipsum dolor.</a></td>
+                    <td ><?php echo $_SESSION["centro"]?></td>
                 </tr>
     
                 <tr>
                     <td >Nombre:</td>
-                    <td><a>Lorem ipsum, dolor sit amet consectetur adipisicing.</a></td>
+                    <td><?php echo $_SESSION["nombre"]?>  <?php echo $_SESSION["apellido"];?></td>
                     <td>Año:</td>
-                    <td><span>lorem</span>
+                    <td><span>2018</span>
                     </td>      
                 </tr>
                 <tr>
                     <td> Carrera:</td>
-                    <td ><span >Lorem, ipsum.</span></td>
+                    <td ><span ><?php echo $_SESSION["carrera"]?></span></td>
                 </tr>
             </tbody>
         </table>

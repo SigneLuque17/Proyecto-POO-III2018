@@ -3,13 +3,15 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Jefes de departamento</title>
+    <title>Login Jefe</title>
     <link rel="icon" href="img/logos/logo.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/FontAwesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="css//FontAwesome/css/all.css">
-    <link rel="stylesheet" href="css/jefes.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/jquery-3.3.1.min.js"></script>     
+    <script src="js/bootstrap.min.js"></script> 
 </head>
 <body>
     <div class="fondo">
@@ -93,51 +95,40 @@
               </ul>
        
             </div>
-        </nav>
+    </nav>
 
-        <section>
-                <div>
-                    <p id="jefe">JEFE DE DEPARTAMENTO</p>
-                    <div  style="float:right; margin-right: 1%"><a href="login.html">Cerrar sesión  </a><i class="fas fa-times-circle" style="color:red"></i></div> 
+    <section>
+        <p id="estudiante">INICIO DE SESIÓN JEFES DE DEPARTAMENTO</p>
+        <P style="margin-left: 15px">Para accesar debes autenticarte</P>
+        <hr>
+
+        <form id="form1"> 
+            <fieldset class="login">
+                <legend class="borde">Ingresa tu Nº de empleado y clave:</legend>
+                <hr>
+                <div style="font-size:0.9em">
+                    No. empleado: <input type="text" style="width:55%;margin-bottom: 3px;" id="numEmpleado">               <br>
+                    Clave:        <input type="password" style="width:55%; margin-left: 20%" id="clave">       <br>
                 </div>
+                <hr>
+                <button type="button" class="btn btn-warning" style="margin-left:35%" id="logJefes">Ingresar</button><br>
+            </fieldset>
+        </form>
+        <div id="advertencia" >
+        <p> <img src="img/iconos/alerta1.png"> Si tiene problemas para ingresar al sistema, favor comunicarse al Tel: 2232-6862</p>
+        <p> <img src="img/iconos/alerta1.png">  Para una mejor experiencia de navegación utilice los navegadores Internet Explorer o Google-Chrome</p>
+        </div>
+    </section>
 
-                <br>
-                <div style="margin-left: 15px;margin-top: 1%" id="derechos">
-                    <br>
-                    <p>Número de empleado: ##########</p>
-                    <p  style="float:left; margin-right: 1%" >Nombre: Ej. Raúl Palma</p>
-                </div>               
-<br><hr>
-<br>
-                <div class="parte2">
-                        <table>
-                            <tr>
-                                <td> <img src="img/iconos/flecha1.jpg"> <a href="planificacion.html">Sección de planificación académica</a></td>
-                            </tr>
-                            <tr>
-                                <td> <img src="img/iconos/flecha1.jpg"><a href="inscripcion-jefes.html"> Inscripción y cancelación</a></td>
-                               
-                            </tr>
-                            <tr>
-                                <td><img src="img/iconos/flecha1.jpg"><a href="informacion-estudiante.html"> Información de estudiante</a></td>
-                            </tr>
-                            <tr>
-                                <td><img src="img/iconos/flecha1.jpg"><a href="registro-calificaciones.html"> Registro de calificaciones</a> </td>
-                            </tr>
-                        </table>                         
-                </div>
-        </section>
-
-        <section class="footer" style="margin: 0">
+    <section class="footer">
             <div id="derechos" style="padding:10px">
                 <p>© Derechos Reservados UNAH 2018</p>
                 <a href="#" style="color: #fff">Dirección Ejecutiva de Gestión de Tecnología (DEGT)</a>                  
             </div>
-        </section>
-
+    </section>
 
 
     </div>
-</body>      
-
-
+    <script src="js/controlador-empleados.js"></script>
+</body>
+</html>

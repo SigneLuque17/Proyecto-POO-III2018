@@ -1,3 +1,6 @@
+<?php 
+    include("validar-sesion.php");
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,6 +13,8 @@
     <link rel="stylesheet" href="css/FontAwesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="css//FontAwesome/css/all.css">
     <link rel="stylesheet" href="css/adicionar.css">
+    <script src="js/jquery-3.3.1.min.js"></script>     
+    <script src="js/bootstrap.min.js"></script> 
 </head>
 <body>
     <div class="fondo">
@@ -117,13 +122,13 @@
                                                 <p><b>Nombre:</b></p>
                                             </td>
                                             <td>
-                                                <p>sssssssssssssss</p>
+                                                <p><?php echo $_SESSION["nombre"]?>  <?php echo $_SESSION["apellido"];?></p>
                                             </td>
                                             <td>
                                                 <p><b>Carrera:</b></p>
                                             </td>
                                             <td>
-                                                <p>ej. Ingenieria en sistemas</p>
+                                                <p><?php echo $_SESSION["carrera"]?></p>
                                             </td>
                                         </tr>
                     

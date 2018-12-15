@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/FontAwesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="css//FontAwesome/css/all.css">
     <link rel="stylesheet" href="css/matricula.css">
+    <script src="js/jquery-3.3.1.min.js"></script>     
+    <script src="js/bootstrap.min.js"></script> 
 </head>
 <body>
     <div class="fondo">
@@ -98,7 +100,7 @@
         <section>
                 <div>
                     <p id="jefe">MATRÍCULA</p>                   
-                    <div  style="float:right; margin-right: 1%"><a href="login.html">Cerrar sesión  </a><i class="fas fa-times-circle" style="color:red"></i></div> 
+                    <div  style="float:right; margin-right: 1%"><a href="login.php">Cerrar sesión  </a><i class="fas fa-times-circle" style="color:red"></i></div> 
                     <br>
                     <div style="margin-left: 15px;margin-top: 3%">
                         <P><b> Matrícula de pregrado</b></P>
@@ -109,7 +111,7 @@
                         <div class="container">
                         <table>
                             <tr>
-                                <td> <img src="img/iconos/flecha1.jpg"> <a href="adicionar-asignatura.html">Adicionar asignatura</a></td>
+                                <td> <img src="img/iconos/flecha1.jpg"> <a href="adicionar-asignatura.php">Adicionar asignatura</a></td>
                             </tr>
                             <tr>
                                 <td> <img src="img/iconos/flecha1.jpg"> <a  href="0-cancelar-asinatura.html"> Cancelar asignatura</a></td>
@@ -119,7 +121,7 @@
                                 <td><img src="img/iconos/flecha1.jpg"><a href="1-lista-asig-cancelada.html"> Listado de asignaturas canceladas</a></td>
                             </tr>
                             <tr>
-                                <td><img src="img/iconos/flecha1.jpg"><a href="003.html"> Forma 03</a> </td>
+                                <td><img src="img/iconos/flecha1.jpg"><a href="003.php"> Forma 03</a> </td>
                                 <td><a href="#" style="margin-left:5%">Oferta de asignaturas en modalidad en línea, Tegucigalpa</a></td>
                             </tr>
                             <tr>

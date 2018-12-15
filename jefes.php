@@ -1,15 +1,20 @@
+<?php 
+    include("validar-sesion-empleados.php");
+?>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Login Jefe</title>
+    <title>Jefes de departamento</title>
     <link rel="icon" href="img/logos/logo.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/FontAwesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="css//FontAwesome/css/all.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/jefes.css">
+    <script src="js/jquery-3.3.1.min.js"></script>     
+    <script src="js/bootstrap.min.js"></script> 
 </head>
 <body>
     <div class="fondo">
@@ -93,40 +98,51 @@
               </ul>
        
             </div>
-    </nav>
+        </nav>
 
-    <section>
-        <p id="estudiante">INICIO DE SESIÓN JEFES DE DEPARTAMENTO</p>
-        <P style="margin-left: 15px">Para accesar debes autenticarte</P>
-        <hr>
-
-        <form id="form1"> 
-            <fieldset class="login">
-                <legend class="borde">Ingresa tu Nº de empleado y clave:</legend>
-                <hr>
-                <div style="font-size:0.9em">
-                    No. empleado: <input type="text" style="width:65%;margin-bottom: 3px;">               <br>
-                    Clave:        <input type="password" style="width:65%; margin-left: 20%">       <br>
+        <section>
+                <div>
+                    <p id="jefe">JEFE DE DEPARTAMENTO</p>
+                    <div  style="float:right; margin-right: 1%"><a href="login.html">Cerrar sesión  </a><i class="fas fa-times-circle" style="color:red"></i></div> 
                 </div>
-                <hr>
-                <input type="button" value="Ingresar"  class="btn btn-warning" style="margin-left:35%"> <br>
-                <a href="jefes.html">entrar (boton temporal)</a>
-            </fieldset>
-        </form>
-        <div id="advertencia" >
-        <p> <img src="img/iconos/alerta1.png"> Si tiene problemas para ingresar al sistema, favor comunicarse al Tel: 2232-6862</p>
-        <p> <img src="img/iconos/alerta1.png">  Para una mejor experiencia de navegación utilice los navegadores Internet Explorer o Google-Chrome</p>
-        </div>
-    </section>
 
-    <section class="footer">
+                <br>
+                <div style="margin-left: 15px;margin-top: 1%" id="derechos">
+                    <br>
+                    <p>Número de empleado: <?php echo $_SESSION["numEmpleado"]?></p>
+                    <p  style="float:left; margin-right: 1%" >Nombre: <?php echo $_SESSION["nombre"]?></p>
+                </div>               
+<br><hr>
+<br>
+                <div class="parte2">
+                        <table>
+                            <tr>
+                                <td> <img src="img/iconos/flecha1.jpg"> <a href="planificacion.html">Sección de planificación académica</a></td>
+                            </tr>
+                            <tr>
+                                <td> <img src="img/iconos/flecha1.jpg"><a href="inscripcion-jefes.html"> Inscripción y cancelación</a></td>
+                               
+                            </tr>
+                            <tr>
+                                <td><img src="img/iconos/flecha1.jpg"><a href="informacion-estudiante.html"> Información de estudiante</a></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/iconos/flecha1.jpg"><a href="registro-calificaciones.html"> Registro de calificaciones</a> </td>
+                            </tr>
+                        </table>                         
+                </div>
+        </section>
+
+        <section class="footer" style="margin: 0">
             <div id="derechos" style="padding:10px">
                 <p>© Derechos Reservados UNAH 2018</p>
                 <a href="#" style="color: #fff">Dirección Ejecutiva de Gestión de Tecnología (DEGT)</a>                  
             </div>
-    </section>
+        </section>
+
 
 
     </div>
-</body>
-</html>
+</body>      
+
+

@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/FontAwesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="css//FontAwesome/css/all.css">
     <link rel="stylesheet" href="css/login.css">
+    <script src="js/jquery-3.3.1.min.js"></script>     
+    <script src="js/bootstrap.min.js"></script> 
 </head>
 <body>
     <div class="fondo">
@@ -105,13 +107,13 @@
                 <legend class="borde">Ingresa tu número de cuenta y clave:</legend>
                 <hr>
                <div style="font-size:0.9em">
-                    No. cuenta: <input type="text" style="width:65%;margin-bottom: 3px;">               <br>
-                    Clave:      <input type="password" style="width:65%; margin-left: 12.5%">       <br>
+                    No. cuenta: <input type="text" style="width:65%;margin-bottom: 3px;" id="nCuenta">               <br>
+                    Clave:      <input type="password" style="width:65%; margin-left: 12.5%" id="pass">       <br>
                 </div>
                 <hr>
-                <input type="button" value="Ingresar"  class="btn btn-warning" style="margin-left:35%"> <br>
-                <a href="estudiantes.html">entrar (boton temporal)</a>
+                <button type="button" class="btn btn-warning" style="margin-left:35%" id="registrar">Ingresar</button><br>
             </fieldset>
+        
         </form>
         <div id="advertencia" >
         <p> <img src="img/iconos/alerta1.png"> Si tiene problemas para ingresar al sistema, favor comunicarse al Tel: 2232-6862</p>
@@ -126,7 +128,7 @@
             </div>
     </section>
 
-
     </div>
+            <script src="js/controlador-estudiantes.js"></script>
 </body>
 </html>

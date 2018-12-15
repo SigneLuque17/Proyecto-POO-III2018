@@ -38,23 +38,23 @@
                                     </li>  
                                     
                                     <li class="nav-item ">
-                                        <a class="nav-link" href="login.html" style="color:fff; font-weight:bold">Primer ingreso</a>
+                                        <a class="nav-link" href="login.php" style="color:fff; font-weight:bold">Primer ingreso</a>
                                     </li>  
 
                                     <li class="nav-item active ">
                                         <a href="#" >Sistema de pregrado</a>
                                             <ul class="submenu">
-                                                <li><a href="login.html">Estudiantes</a></li>
+                                                <li><a href="login.php">Estudiantes</a></li>
                                                 <hr>
-                                                <li><a href="profesores.html">Profesores</a></li>
+                                                <li><a href="login-docentes.php">Profesores</a></li>
                                                 <hr>
-                                                <li><a href="login-jefe.html">Jefes de departamento</a></li>
+                                                <li><a href="login-jefes.php">Jefes de departamento</a></li>
                                                 <hr>
                                                 <li><a href="#">Programas especiales</a></li>
                                                 <hr>
                                                 <li><a href="#">Suficiencias</a></li>
                                                 <hr>
-                                                <li><a href="coordinador.html">Coordinador asignatura</a></li>      
+                                                <li><a href="login-coordinadores.php">Coordinador asignatura</a></li>      
                                             </ul>
                                     </li>
                                      
