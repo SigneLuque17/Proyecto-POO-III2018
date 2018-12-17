@@ -161,7 +161,7 @@
                     </section> 
 
                     <div>
-                        <button id="asignar-clase" style="margin-left:7%"  class="btn btn-success" type="button" data-toggle="modal" data-target="#myModal">Seleccionar Asignatura</button>
+                        <button id="asignar-clase" style="margin-left:7%"  class="btn btn-success" type="button" data-toggle="modal" data-target="#modal-matricular">Seleccionar Asignatura</button>
                     </div>
                     
                     <div class="seccion2">
@@ -169,7 +169,7 @@
                                     <p id="encabezado1">Asignaturas Matriculadas</p>  
                             </div>   
                             <table class="border" cellspacing="0" cellpadding="0" id="tabla2">
-                                    <tbody > 
+                                    <thead> 
                                         <!--fila 1-->
                                                <tr>
                                                    <td>
@@ -197,8 +197,11 @@
                                                         <p><b>Periodo</b></p>
                                                    </td>
                                                </tr>
-                                        <!--fila 2 se ira anadiendo conforme las asignaturas seleccionadas-->
+                                        
                                               
+                                    </thead>
+                                    <tbody id="clases-matriculadas">
+                                    <!--fila 2 se ira anadiendo conforme las asignaturas seleccionadas-->
                                     </tbody>
                             </table>  
 <br>
@@ -288,7 +291,7 @@
 
 <!--********************************VENTANA MODAL *****************************************-->
 <!-- Modal -->
-<div class="modal fade" id="myModal" role="dialog">
+<div class="modal fade" id="modal-matricular" role="dialog">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             
               <!-- Modal content-->
@@ -302,32 +305,29 @@
                          <div class="col-12" style="margin-bottom:2%">
   
                             <div>
-                                    <select id="select-c" multiple class="form-control col-12 col-sm-12 col-md-4 col-lg-4 " style="float:left" size="12">
-                                          
-
-  
-
+                                    <select name="facultades" id="slc-facultades" class="form-control col-12 col-sm-12 col-md-6 col-lg-6 " style="float:left">
+                                        <!--AQUI SE VISUALIZAN LAS FACULTADES-->
                                     </select>
 
-                                    <select id="select-b" multiple class="form-control col-12 col-sm-12 col-md-4 col-lg-4 " style="float:left" size="12">
-                                            
+                                    <select class="form-control col-12 col-sm-12 col-md-6 col-lg-6 " id="select-carreras" style="float:left">
+                                        <!--AQUI SE VISUALIZAN LAS CARRERAS-->
                                     </select>
 
-                                    <select id="select-a" multiple class="form-control col-12 col-sm-12 col-md-4 col-lg-4 " id="select-secciones" size="12">
-                                            
+                                    <select multiple class="form-control col-12 col-sm-12 col-md-12 col-lg-12 " id="select-clases"  size="5">
+                                        <!--AQUI SE VISUALIZAN LAS CLASES DE LA CARRERA-->                                       
+                                    </select>
+
+                                    <select multiple class="form-control col-12 col-sm-12 col-md-12 col-lg-12 " id="select-secciones" size="12">
+                                        <!--AQUI SE VISUALIZAN LAS SECCIONES DE LA CLASE-->      
                                     </select>
                             </div>
-                            
-
-
-
 
                          </div>  
                          <br>                                                    
                      </div>
                 </div>  
                 <div class="modal-footer">
-                    <button class="btn btn-success centrar"  type="button" value="Buscar">Matricular</button>
+                    <button class="btn btn-success centrar"  type="button" value="matricular" id="btn-matricular">Matricular</button>
                 </div>                              
             </div>
         </div>
@@ -340,7 +340,7 @@
 
     <script src="js/jquery-3.3.1.js"></script>     
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/controlador-adicionar-clases.js"></script>
+    <script src="js/controlador-matricula.js"></script>
 </body>      
 
 
