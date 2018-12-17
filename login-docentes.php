@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Login Jefe</title>
+    <title>Login docente</title>
     <link rel="icon" href="img/logos/logo.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -98,7 +98,7 @@
     </nav>
 
     <section>
-        <p id="estudiante">INICIO DE SESIÓN DOCENTES</p>
+        <p id="docente">INICIO DE SESIÓN DOCENTES</p>
         <P style="margin-left: 15px">Para accesar debes autenticarte</P>
         <hr>
 

@@ -1,5 +1,5 @@
 <?php 
-   include("validar-sesion.php");
+   include("validar-sesion-docente.php");
 ?>
 <!DOCTYPE html>
 <html>
@@ -108,7 +108,7 @@
     <br>
         <div style="margin-left: 15px;margin-top: 1%" id="derechos">
            <br>
-            <p> <b> Bienvenid@:</b> <?php echo $_SESSION["nombre"]?>  <?php echo $_SESSION["apellido"];?></p>
+            <p> <b> Bienvenid@:</b> <?php echo $_SESSION["nombre"]?></p>
             <figure id="photo" title="Si no esta correcto, favor abocarse con la Identidad Original y la fotocopia por ambos lados a la DIPP-Registro UNAH a nivel nacional" tooltip-dir="right">
                    
             </figure>

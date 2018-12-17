@@ -1,5 +1,5 @@
 <?php 
     session_start();  
     if (!isset($_SESSION["numEmpleado"]))
-        header("Location: login-docentes.php");//Redireccion con PHP
+        header("Location: login-coordinadores.php");//Redireccion con PHP
 ?>
