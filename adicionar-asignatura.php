@@ -128,7 +128,7 @@
                                                 <p><b>Carrera:</b></p>
                                             </td>
                                             <td>
-                                                <p><?php echo $_SESSION["carrera"]?></p>
+                                                <p id="carrerasss"><?php echo $_SESSION["facultad"]?></p>
                                             </td>
                                         </tr>
                     
@@ -156,12 +156,12 @@
                                             </td>
                                         </tr>
                                     </tr>
-                             </tbody>
+                             </tbody> 
                          </table>  
                     </section> 
 
                     <div>
-                        <button style="margin-left:7%"  class="btn btn-success" type="button" data-toggle="modal" data-target="#myModal">Seleccionar Asignatura</button>
+                        <button id="asignar-clase" style="margin-left:7%"  class="btn btn-success" type="button" data-toggle="modal" data-target="#myModal">Seleccionar Asignatura</button>
                     </div>
                     
                     <div class="seccion2">
@@ -302,48 +302,19 @@
                          <div class="col-12" style="margin-bottom:2%">
   
                             <div>
-                                    <select multiple class="form-control col-12 col-sm-12 col-md-4 col-lg-4 " id="select-carreras" style="float:left" size="12">
-                                            <option value="">Antropología</option>
-                                            <option value="">Arqueoastronomía y Astronomía cultural</option>
-                                            <option value="">Arte</option>
-                                            <option value="">Astronomía y Astrofísica</option>
-                                            <option value="">Biología</option>
-                                            <option value="">Ciencia y Tecnologías de la Información</option>
-                                            <option value="">Ciencias Políticas y Derechos Humanos</option>
-                                            <option value="">Cultura Física y Deportes</option>
-                                            <option value="">Ecología y Recursos Naturales</option>
-                                            <option value="">Estadística Matemática</option>
-                                            <option value="">Filosofía</option>
-                                            <option value="">Física de la Tierra</option>
-                                            <option value="">Historia</option>
-                                            <option value="">Infraestructura</option>
-                                            <option value="">Ingeniería de Sistemas</option>
-                                            <option value="">Lenguas Extrangeras</option>
-                                            <option value="">Letras</option>
-                                            <option value="">Matemática Aplicada</option>
-                                            <option value="">Matemática Pura</option>
-                                            <option value="">Materia Condensada</option>
-                                            <option value="">Química</option>
-                                            <option value="">Sociología</option>
+                                    <select id="select-c" multiple class="form-control col-12 col-sm-12 col-md-4 col-lg-4 " style="float:left" size="12">
+                                          
 
-
+  
 
                                     </select>
 
-                                    <select multiple class="form-control col-12 col-sm-12 col-md-4 col-lg-4 " id="select-clases" style="float:left" size="12">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
+                                    <select id="select-b" multiple class="form-control col-12 col-sm-12 col-md-4 col-lg-4 " style="float:left" size="12">
+                                            
                                     </select>
 
-                                    <select multiple class="form-control col-12 col-sm-12 col-md-4 col-lg-4 " id="select-secciones" size="12">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
+                                    <select id="select-a" multiple class="form-control col-12 col-sm-12 col-md-4 col-lg-4 " id="select-secciones" size="12">
+                                            
                                     </select>
                             </div>
                             
@@ -369,6 +340,7 @@
 
     <script src="js/jquery-3.3.1.js"></script>     
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/controlador-adicionar-clases.js"></script>
 </body>      
 
 
