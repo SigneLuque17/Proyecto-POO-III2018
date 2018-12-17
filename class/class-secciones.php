@@ -114,8 +114,8 @@
 			$this->docente = $docente;
 		}
         
-        public static function obtenerSecciones(){	
-            $archivo = fopen("../data/carreras/".$_POST["facultad"]."/asignaturas/secciones/".$_POST["codCarrera"]."-".$_POST["codClase"].".json", "r");
+        public static function obtenerSecciones($facultad, $codCarrera, $codClase){	
+            $archivo = fopen("../data/carreras/".$facultad."/asignaturas/secciones/".$codCarrera."-".$codClase.".json", "r");
             $registros = array();
             while(($linea=fgets($archivo))){
                 $registros[] = json_decode($linea,true);

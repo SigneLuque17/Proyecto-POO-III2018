@@ -169,7 +169,7 @@
                                     <p id="encabezado1">Asignaturas Matriculadas</p>  
                             </div>   
                             <table class="border" cellspacing="0" cellpadding="0" id="tabla2">
-                                    <tbody > 
+                                    <thead> 
                                         <!--fila 1-->
                                                <tr>
                                                    <td>
@@ -197,8 +197,11 @@
                                                         <p><b>Periodo</b></p>
                                                    </td>
                                                </tr>
-                                        <!--fila 2 se ira anadiendo conforme las asignaturas seleccionadas-->
+                                        
                                               
+                                    </thead>
+                                    <tbody id="clases-matriculadas">
+                                    <!--fila 2 se ira anadiendo conforme las asignaturas seleccionadas-->
                                     </tbody>
                             </table>  
 <br>
@@ -288,7 +291,7 @@
 
 <!--********************************VENTANA MODAL *****************************************-->
 <!-- Modal -->
-<div class="modal fade" id="myModal" role="dialog">
+<div class="modal fade" id="modal-matricular" role="dialog">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             
               <!-- Modal content-->
@@ -302,61 +305,29 @@
                          <div class="col-12" style="margin-bottom:2%">
   
                             <div>
-                                    <select multiple class="form-control col-12 col-sm-12 col-md-4 col-lg-4 " id="select-carreras" style="float:left" size="12">
-                                            <option value="">Antropología</option>
-                                            <option value="">Arqueoastronomía y Astronomía cultural</option>
-                                            <option value="">Arte</option>
-                                            <option value="">Astronomía y Astrofísica</option>
-                                            <option value="">Biología</option>
-                                            <option value="">Ciencia y Tecnologías de la Información</option>
-                                            <option value="">Ciencias Políticas y Derechos Humanos</option>
-                                            <option value="">Cultura Física y Deportes</option>
-                                            <option value="">Ecología y Recursos Naturales</option>
-                                            <option value="">Estadística Matemática</option>
-                                            <option value="">Filosofía</option>
-                                            <option value="">Física de la Tierra</option>
-                                            <option value="">Historia</option>
-                                            <option value="">Infraestructura</option>
-                                            <option value="">Ingeniería de Sistemas</option>
-                                            <option value="">Lenguas Extrangeras</option>
-                                            <option value="">Letras</option>
-                                            <option value="">Matemática Aplicada</option>
-                                            <option value="">Matemática Pura</option>
-                                            <option value="">Materia Condensada</option>
-                                            <option value="">Química</option>
-                                            <option value="">Sociología</option>
-
-
-
+                                    <select name="facultades" id="slc-facultades" class="form-control col-12 col-sm-12 col-md-6 col-lg-6 " style="float:left">
+                                        <!--AQUI SE VISUALIZAN LAS FACULTADES-->
                                     </select>
 
-                                    <select multiple class="form-control col-12 col-sm-12 col-md-4 col-lg-4 " id="select-clases" style="float:left" size="12">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
+                                    <select class="form-control col-12 col-sm-12 col-md-6 col-lg-6 " id="select-carreras" style="float:left">
+                                        <!--AQUI SE VISUALIZAN LAS CARRERAS-->
                                     </select>
 
-                                    <select multiple class="form-control col-12 col-sm-12 col-md-4 col-lg-4 " id="select-secciones" size="12">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
+                                    <select multiple class="form-control col-12 col-sm-12 col-md-12 col-lg-12 " id="select-clases"  size="5">
+                                        <!--AQUI SE VISUALIZAN LAS CLASES DE LA CARRERA-->                                       
+                                    </select>
+
+                                    <select multiple class="form-control col-12 col-sm-12 col-md-12 col-lg-12 " id="select-secciones" size="12">
+                                        <!--AQUI SE VISUALIZAN LAS SECCIONES DE LA CLASE-->      
                                     </select>
                             </div>
-                            
-
-
-
 
                          </div>  
                          <br>                                                    
                      </div>
                 </div>  
                 <div class="modal-footer">
-                    <button class="btn btn-success centrar"  type="button" value="Buscar">Matricular</button>
+                    <button class="btn btn-success centrar"  type="button" value="matricular" id="btn-matricular">Matricular</button>
                 </div>                              
             </div>
         </div>
@@ -369,6 +340,7 @@
 
     <script src="js/jquery-3.3.1.js"></script>     
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/controlador-matricula.js"></script>
 </body>      
 
 

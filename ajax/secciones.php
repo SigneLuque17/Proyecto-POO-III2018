@@ -2,7 +2,7 @@
 switch($_GET["accion"]){
                 case 1:
                     include("../class/class-secciones.php");
-                    echo Seccion::obtenerSecciones();
+                    echo Seccion::obtenerSecciones($_GET["facultad"],$_GET["codCarrera"],$_GET["codClase"]);
                 break;
                 case 2:
                     include("../class/class-secciones.php");   
