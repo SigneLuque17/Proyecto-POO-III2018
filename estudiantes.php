@@ -1,5 +1,5 @@
 <?php 
-    include("validar-sesion.php");
+   include("validar-sesion.php");
 ?>
 <!DOCTYPE html>
 <html>

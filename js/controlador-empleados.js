@@ -33,8 +33,8 @@ $("#logJefes").click(function(){
         method:"POST",
         success:function(respuesta){
             console.log(respuesta);
-            if (respuesta.estatus == 1){
-                    window.location.href = "jefes.php";//redireccionar        CAMBIAR A COORD
+            if (respuesta.estatus == 1){ 
+                    window.location.href = "coordinador.php";//redireccionar        CAMBIAR A COORD
                     console.log("Coordinador ingresando: "+respuesta.nombre);
             }else 
                 alert("Credenciales invalidas");
@@ -58,7 +58,7 @@ $("#logProf").click(function(){
         success:function(respuesta){
             console.log(respuesta);
             if (respuesta.estatus == 1){
-                    window.location.href = "jefes.php";//redireccionar      CAMBIAR A DOC
+                    window.location.href = "docente.php";//redireccionar      CAMBIAR A DOC
                     console.log("Docente ingresando: "+respuesta.nombre);
             }else 
                 alert("Credenciales invalidas");

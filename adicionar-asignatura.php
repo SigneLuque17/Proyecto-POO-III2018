@@ -128,7 +128,7 @@
                                                 <p><b>Carrera:</b></p>
                                             </td>
                                             <td>
-                                                <p><?php echo $_SESSION["carrera"]?></p>
+                                                <p id="carrerasss"><?php echo $_SESSION["facultad"]?></p>
                                             </td>
                                         </tr>
                     
@@ -156,12 +156,12 @@
                                             </td>
                                         </tr>
                                     </tr>
-                             </tbody>
+                             </tbody> 
                          </table>  
                     </section> 
 
                     <div>
-                        <button style="margin-left:7%"  class="btn btn-success" type="button" data-toggle="modal" data-target="#myModal">Seleccionar Asignatura</button>
+                        <button id="asignar-clase" style="margin-left:7%"  class="btn btn-success" type="button" data-toggle="modal" data-target="#modal-matricular">Seleccionar Asignatura</button>
                     </div>
                     
                     <div class="seccion2">
