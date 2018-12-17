@@ -1,7 +1,8 @@
 <?php
 class Carrera{
 	private $nombre;
-	private $ubicacion;
+	private $cod;
+	private $facu;
 
 	public function __construct(
 		$nombre = null,
