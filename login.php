@@ -104,11 +104,11 @@
 
         <form id="form1"> 
             <fieldset class="login">
-                <legend class="borde">Ingresa tu número de cuenta y clave:</legend>
+                <legend  class="borde">Ingresa tu número de cuenta y clave:</legend>
                 <hr>
                <div style="font-size:0.9em">
-                    No. cuenta: <input type="text" style="width:65%;margin-bottom: 3px;" id="nCuenta">               <br>
-                    Clave:      <input type="password" style="width:65%; margin-left: 12.5%" id="pass">       <br>
+                    No. cuenta: <input type="text" style="width:65%;margin-bottom: 3px;" id="nCuenta"> <br>
+                    Clave:      <input type="password" style="width:65%; margin-left: 12.5%" id="pass">   <br>
                 </div>
                 <hr>
                 <button type="button" class="btn btn-warning" style="margin-left:35%" id="registrar">Ingresar</button><br>
