@@ -307,8 +307,7 @@
               <!-- Modal content-->
             <div class="modal-content" style="background-color:#183F60">
                 <div class="modal-header centrar" >
-                  <h6 class="modal-title" style="color:white"  ><b>Asignaturas</b></h6>
-                  <input type="hidden" value="<?php echo $_SESSION["cuenta"]?>" id="usuario-matriculando" disabled size=0>
+                  <h6 class="modal-title" style="color:white"><b>Asignaturas</b></h6>
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body" style="background-color:rgb(255, 255, 255);" class="col-12 col-sm-12 col-md-6 col-lg-6 form-control">                
