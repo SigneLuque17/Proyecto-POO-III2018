@@ -68,7 +68,9 @@ class Carrera{
 	public function guardarCarrera(){
         $respuesta = array();
         if(isset($_POST["carrera"])){
-            if(!file_exists("../data/carreras/".$_POST["facultad"]."/carreras.json")){
+			mkdir("../data/matricula/".$_POST["facultad"]."/".$_POST["codigo"]);
+		
+			if(!file_exists("../data/carreras/".$_POST["facultad"]."/carreras.json")){
                 $archivo = fopen("../data/carreras/".$_POST["facultad"]."/carreras.json", "w");
             }
             $archivo = fopen("../data/carreras/".$_POST["facultad"]."/carreras.json", "a+");

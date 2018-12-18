@@ -143,7 +143,7 @@
                             $registroClase = json_decode($linea,true);
                             if($registroClase["codigo"] == $_POST["codClase"]){
                                 //Obtener uv de clase
-                $registro["UV"] =$registroClase["uv"];
+               					 $registro["UV"] =$registroClase["uv"];
                                 break;
                             }
                         }
@@ -184,10 +184,6 @@
                
             }
         }
-
-
-
-
 
 	}
 ?>

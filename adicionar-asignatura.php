@@ -128,17 +128,18 @@
                                                 <p><b>Carrera:</b></p>
                                             </td>
                                             <td>
-                                                <p id="carrerasss"><?php echo $_SESSION["facultad"]?></p>
+                                                <p id="carrerasss"><?php echo $_SESSION["carrera"]?></p>
                                             </td>
                                         </tr>
                     
                                         <tr>
                                             <td>
-                                                <p><b>Año:</b></p>
+                                                <p><b>Cuenta:</b></p>
                                             </td>
                                             <td>
-                                                <p>2018</p>
+                                                <p><?php echo $_SESSION["cuenta"]?></p>
                                             </td>
+
                                             <td>
                                                 <p><b>UV Disponibles:</b></p>
                                             </td>
@@ -154,9 +155,18 @@
                                             <td>
                                                 <p>3</p>
                                             </td>
+
+                                            <td>
+                                                <p><b>Año:</b></p>
+                                            </td>
+                                            <td>
+                                                <p>2018</p>
+                                            </td>
+
                                         </tr>
                                     </tr>
                              </tbody> 
+                             
                          </table>  
                     </section> 
 

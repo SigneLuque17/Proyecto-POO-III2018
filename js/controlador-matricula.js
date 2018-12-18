@@ -106,16 +106,15 @@ $("#select-clases").change(function(){
 ////////////////////////////////////////////MATRICULAR ASIGNATURA//////////////////////////////////////////////////////
 
 $("#btn-matricular").click(function(){
-	var parametros = "nombreElemento="+$("#txt-carpeta").val()+"&"+
-					"fechaModificacion="+$("#txt-mod").val()+"&"+
-					"fechaCreacion="+$("#txt-creacion").val()+"&"+
-					"usuario="+$("#txt-usuario").val()+"&"+
-					"tamanio="+$("#txt-size").val()+"&"+
-					"carpetaActual="+$("#txt-carpeta-actual").val();
+	var parametros = "seccion="+$("#select-secciones").val()+"&"+
+					"codCarrera="+$("#select-carreras").val()+"&"+
+					"codClase="+$("#select-carreras").val()+"&"+
+					"facultad="+$("#slc-facultades").val();
 
-			$("#btn-matricular").attr("disabled",true);
+			console.log(parametros)		
+			//$("#btn-matricular").attr("disabled",true);
 			$.ajax({
-				url:"ajax/crear-elementos.php?accion=1",
+				url:"ajax/matricula.php?accion=2",
 				data:parametros,
 				method:"POST",
 				dataType:"json",
@@ -124,10 +123,13 @@ $("#btn-matricular").click(function(){
 						$('#modal-matricular').modal('hide');	
 						$("#clases-matriculadas").append(
 							`<tr>
-								<td><a href="index.php?carpeta=${$("#txt-carpeta-actual").val()}/${$("#txt-carpeta").val()}"><i class="fas fa-folder-open"></i>${$("#txt-carpeta").val()}</a></td>
-								<td>${$("#txt-mod").val()}</td>
-								<td>${$("#txt-usuario").val()}</td>
-								<td>${$("#txt-size").val()}</td>
+								<td></td>
+								<td>${respuesta.codCarrera}${respuesta.codClase}</td>
+								<td>${respuesta.clase}</td>
+								<td>${respuesta.inicio}</td>
+								<td>${respuesta.final}</td>
+								<td>${respuesta.dias}</td>
+								<td>3</td>
 							</tr>`
 						);
 					}	
