@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Login estudiantes</title>
+    <title>Login administrador</title>
     <link rel="icon" href="img/logos/logo.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -79,7 +79,7 @@
                     <li class="nav-item ">
                             <a href="#" >Administración</a>
                                 <ul class="submenu">
-                                    <li><a href="login-administrador.php">Dirección académica</a></li>
+                                    <li><a href="administrador.php">Dirección académica</a></li>
                                     <hr>
                                     <li><a href="#">Comisionado universitario</a></li>
                                     <hr>
@@ -87,7 +87,7 @@
                                     <hr>
                                     <li><a href="#">Decanos</a></li>
                                     <hr>
-                                    <li><a href="#">administrador</a></li>  
+                                    <li><a href="#">DIPP</a></li>  
                                     <hr>
                                     <li><a href="#">SEAPI</a></li>   
                                 </ul>
@@ -98,22 +98,21 @@
     </nav>
 
     <section>
-        <p id="estudiante">SERVICIOS AL ESTUDIANTE</p>
-        <P style="margin-left: 15px">Para accesar a los servicios del estudiante debes autenticarte</P>
+        <p id="ADMIN">INICIO DE SESIÓN ADMINISTRADOR</p>
+        <P style="margin-left: 15px">Para accesar debes autenticarte</P>
         <hr>
 
         <form id="form1"> 
             <fieldset class="login">
-                <legend class="borde">Ingresa tu número de cuenta y clave:</legend>
+                <legend class="borde">Ingresa tu Nº de empleado y clave:</legend>
                 <hr>
-               <div style="font-size:0.9em">
-                    No. cuenta: <input type="text" style="width:65%;margin-bottom: 3px;" id="nCuenta">               <br>
-                    Clave:      <input type="password" style="width:65%; margin-left: 12.5%" id="pass">       <br>
+                <div style="font-size:0.9em">
+                    No. empleado: <input type="text" style="width:55%;margin-bottom: 3px;" id="numEmpleado">               <br>
+                    Clave:        <input type="password" style="width:55%; margin-left: 20%" id="clave">       <br>
                 </div>
                 <hr>
-                <button type="button" class="btn btn-warning" style="margin-left:35%" id="registrar">Ingresar</button><br>
+                <button type="button" class="btn btn-warning" style="margin-left:35%" id="logJefes">Ingresar</button><br>
             </fieldset>
-        
         </form>
         <div id="advertencia" >
         <p> <img src="img/iconos/alerta1.png"> Si tiene problemas para ingresar al sistema, favor comunicarse al Tel: 2232-6862</p>
@@ -128,7 +127,8 @@
             </div>
     </section>
 
+
     </div>
-            <script src="js/controlador-estudiantes.js"></script>
+    <script src="js/controlador-empleados.js"></script>
 </body>
 </html>
