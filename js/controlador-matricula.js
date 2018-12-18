@@ -20,26 +20,34 @@ $(document).ready(function(){
 	});
 
 ////////////////////////////////////////////VISUALIZAR MATRICULA //////////////////////////////////////////////////////
-	$.ajax({
+	var parametro  = "cuenta="+$("#txt-cuenta").val()+"&"
+					+"carrera="+$("#txt-carrera").val()+"&"
+					+"facultad="+$("#txt-facultad").val();
+		console.log(parametro);
+        $.ajax({
 		url:"ajax/matricula.php?accion=2", //opcion 2 para obtener asignaturas matriculadas
-		data:parametros,
-		method:"POST",
+		method:"GET",
+		data:parametro,
 		dataType:"json",
+		
 		success:function(respuesta){
 			console.log(respuesta);
-				$('#modal-matricular').modal('hide');	
-				$("#clases-matriculadas").append(
-					`<tr>
-						<td>${respuesta.codCarrera}${respuesta.codClase}</td>
-						<td>${respuesta.seccion}</td>
-						<td>${respuesta.clase}</td>
-						<td>${respuesta.inicio}</td>
-						<td>${respuesta.final}</td>
-						<td>${respuesta.dias}</td>
-						<td>${respuesta.uv}</td>
-						<td>3</td>
-					</tr>`
-				);
+
+				for (var i =0;i<respuesta.length;i++){
+					$("#clases-matriculadas").append(
+						`<tr>
+							<td>${respuesta[i].codCarrera}${respuesta[i].codClase}</td>
+							<td>${respuesta[i].seccion}</td>
+							<td>${respuesta[i].clase}</td>
+							<td>${respuesta[i].inicio}</td>
+							<td>${respuesta[i].final}</td>
+							<td>${respuesta[i].dias}</td>
+							<td>${respuesta[i].uv}</td>
+							<td>3</td>
+						</tr>`
+					);
+				}
+				
 			}	
 		
 	});
