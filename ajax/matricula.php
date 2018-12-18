@@ -40,29 +40,58 @@
         } 
             break;
 
-        case 2:
+            case 2:
+
+            include("../class/class-matricula.php");
+            echo Matricula::obtenerMatricula($_GET["facultad"],$_GET["Carrera"],$_GET["codClase"].$_POST["cuenta"]);
         
-           //obtener datos de la carrera
-            $archivoCarrera = fopen("../data/carreras/".$_GET["facultad"]."/carreras.json","r");   
-            while(($linea = fgets($archivoCarrera))){
-                $registroCarrera = json_decode($linea,true);
-                if($registroCarrera["carrera"] == $_GET["carrera"]){
-                    //Obtener datos
-                    $registro["codigo"] = $registroCarrera["codigo"];
+         /*   if(isset($_POST["seccion"])){
+                        $respuesta = array();    
                     
-                    break;
-                }
-            }
-            fclose($archivoCarrera);
-
-            $archivo = fopen("../data/matricula/".$_GET["facultad"]."/".$registro["codigo"]."/".$_GET["cuenta"].".json", "r");
-            $registros = array();
-            while(($linea=fgets($archivo))){
-                $registros[] = json_decode($linea, true);
-            }   
-            echo json_encode($registros);
-
-        break;
-    }
+                            if(!file_exists("../data/matricula/".$_POST["facultad"]."/".$_POST["codCarrera"]."/".$_POST["cuenta"].".json")){
+                                        $archivo = fopen("../data/matricula/".$_POST["facultad"]."/".$_POST["codCarrera"]."/".$_POST["cuenta"].".json", "w");
+                            }
+                                    $archivo = fopen("../data/matricula/".$_POST["facultad"]."/".$_POST["codCarrera"]."/".$_POST["cuenta"].".json", "a+");
+                        
+                                    //obtener datos de la seccion/////////////
+                                            $archivoSeccion = fopen("../data/carreras/".$_POST["facultad"]."/asignaturas/secciones/".$_POST["codCarrera"]."-".$_POST["codClase"].".json","r");   
+                                            while(($linea = fgets($archivoSeccion))){
+                                                $registroSeccion = json_decode($linea,true);
+                                                if($registroSeccion["seccion"] == $_POST["seccion"]){
+                                                    //Obtener datos
+                                                    $registro["codCarrera"] =$registroSeccion["codCarrera"];
+                                                    $registro["codClase"] =$registroSeccion["codClase"];
+                                                    $registro["uv"] =$registroSeccion["uv"];
+                                                    $registro["clase"] =$registroSeccion["clase"];
+                                                    $registro["seccion"] =$registroSeccion["seccion"];
+                                                    $registro["inicio"] =$registroSeccion["inicio"];
+                                                    $registro["final"] =$registroSeccion["final"];
+                                                    $registro["dias"] =$registroSeccion["dias"];
+                                                    $registro["edificio"] =$registroSeccion["edificio"];
+                                                    $registro["aula"] =$registroSeccion["aula"]; 
+    
+                                                    break;
+                                                }
+                                            }
+                                            fclose($archivoSeccion);
+    
+                                    fwrite($archivo, json_encode($registro)."\n");
+                                    fclose($archivo);
+                        
+                                    $respuesta = $registro;
+                                    $respuesta["num"] = 1;
+                                    echo json_encode($respuesta);
+                                else{
+                                    $respuesta["num"] = 0;
+                                    echo json_encode($respuesta);
+                                } 
+                            
+                     else{
+                        echo '{"error":"1"}';
+                    }*/
+    
+            break;
+        }
+        
     
 ?>

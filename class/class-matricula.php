@@ -86,8 +86,21 @@
                 echo json_encode($respuesta);
             } 
           
+
+            
+
+            public static function obtenerMatricula(){	
+                $archivo = fopen("../data/matricula/".$facultad."/".$Carrera."/".$codClase."/".$_POST["cuenta"].".json", "w");
+                $registros = array();
+                while(($linea=fgets($archivo))){
+                    $registros[] = json_decode($linea,true);
+                }
+                return json_encode($registros);
+            }
+        
+        }
         }
 
-	}
+	
 
 ?>
