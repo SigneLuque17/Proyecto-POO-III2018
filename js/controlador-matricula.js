@@ -18,6 +18,35 @@ $(document).ready(function(){
 			console.error(error);
 		}
 	});
+
+////////////////////////////////////////////VISUALIZAR MATRICULA //////////////////////////////////////////////////////
+	$.ajax({
+		url:"ajax/matricula.php?accion=2", //opcion 2 para obtener asignaturas matriculadas
+		data:parametros,
+		method:"POST",
+		dataType:"json",
+		success:function(respuesta){
+			console.log(respuesta);
+				$('#modal-matricular').modal('hide');	
+				$("#clases-matriculadas").append(
+					`<tr>
+						<td>${respuesta.codCarrera}${respuesta.codClase}</td>
+						<td>${respuesta.seccion}</td>
+						<td>${respuesta.clase}</td>
+						<td>${respuesta.inicio}</td>
+						<td>${respuesta.final}</td>
+						<td>${respuesta.dias}</td>
+						<td>${respuesta.uv}</td>
+						<td>3</td>
+					</tr>`
+				);
+			}	
+		
+	});
+
+
+
+
 });
 
 //====================================================obtener carreras=================================================================
@@ -113,9 +142,10 @@ $("#btn-matricular").click(function(){
 					"facultad="+$("#slc-facultades").val();
 			
 			console.log(parametros);		
-			//$("#btn-matricular").attr("disabled",true);
+			$("#btn-matricular").attr("disabled",true);
+			
 			$.ajax({
-				url:"ajax/matricula.php?accion=1",
+				url:"ajax/matricula.php?accion=1",  //accion 1 para matricular clases
 				data:parametros,
 				method:"POST",
 				dataType:"json",
@@ -125,10 +155,12 @@ $("#btn-matricular").click(function(){
 						$("#clases-matriculadas").append(
 							`<tr>
 								<td>${respuesta.codCarrera}${respuesta.codClase}</td>
+								<td>${respuesta.seccion}</td>
 								<td>${respuesta.clase}</td>
 								<td>${respuesta.inicio}</td>
 								<td>${respuesta.final}</td>
 								<td>${respuesta.dias}</td>
+								<td>${respuesta.uv}</td>
 								<td>3</td>
 							</tr>`
 						);
@@ -136,5 +168,8 @@ $("#btn-matricular").click(function(){
 				
 			});
 });
+
+
+
 
 
