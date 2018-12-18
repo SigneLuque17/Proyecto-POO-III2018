@@ -159,7 +159,7 @@ $("#btn-matricular").click(function(){
 				dataType:"json",
 				success:function(respuesta){
 					console.log(respuesta);
-						$('#modal-matricular').modal('hide');	
+				//	$('#modal-matricular').modal('hide');		
 						$("#clases-matriculadas").append(
 							`<tr>
 								<td>${respuesta.codCarrera}${respuesta.codClase}</td>

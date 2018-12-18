@@ -87,6 +87,7 @@ $("#facultad").change(function(){
         data:parametros,
         success:function(respuesta){
             console.log(respuesta);
+            $('#myModal').modal('hide');
         },
         error:function(error){
             console.error(error);

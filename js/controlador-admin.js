@@ -35,6 +35,7 @@ $("#crear-centro").click(function(){
 		data:parametros,
 		success:function(respuesta){
 			console.log(respuesta);
+			$('#myModal').modal('hide');
 		},
 		error:function(error){
 			console.error(error);
@@ -57,6 +58,7 @@ $("#crear-carrera").click(function(){
 		data:parametros,
 		success:function(respuesta){
 			console.log(respuesta);
+			$('#myModal2').modal('hide');
 		},
 		error:function(error){
 			console.error(error);
@@ -81,6 +83,7 @@ $("#crear-clase").click(function(){
 		data:parametros,
 		success:function(respuesta){
 			console.log(respuesta);
+			$('#myModal3').modal('hide');
 		},
 		error:function(error){
 			console.error(error);

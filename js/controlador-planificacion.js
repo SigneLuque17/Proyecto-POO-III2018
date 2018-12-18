@@ -35,7 +35,10 @@ $(document).ready(function(){
 		error:function(error){
 			console.error(error);
 		}
-    });
+	});
+
+
+
 });
 
 //==========================================obtener carreras=================================
@@ -84,9 +87,9 @@ $("#carrera").change(function(){
                 $("#clases").append(`
                 <option value="${respuesta[i].codigo}">${respuesta[i].clase}</option>`
                 );   
-                $("#codigo").append(`<input class="form-control" type="text" placeholder="${respuesta[i].carrera}" id="txt-codigo" disabled>`
+                $("#codigo").html(`<input class="form-control" type="text" placeholder="${respuesta[i].carrera}" id="txt-codigo" disabled>`
                 ); 
-               //$("#uv").append(`<input class="form-control" type="text" placeholder="${respuesta[i].uv}" id="txt-UV" disabled>`);          
+                       
             }
            
 		},
@@ -112,7 +115,7 @@ $("#clases").change(function(){
 		success:function(respuesta){
             console.log(respuesta);	
 			for (var i =0;i<respuesta.length;i++){ 
-               $("#uv").append(`<input class="form-control" type="text" placeholder="${respuesta[i].uv}" id="txt-UV" disabled>`);          
+               $("#uv").html(`<input class="form-control" type="text" placeholder="${respuesta[i].uv}" id="txt-UV" disabled>`);          
             }          
 		},
 		error:function(error){
@@ -144,6 +147,7 @@ $("#crear-seccion").click(function(uv){
 		data:parametros,
 		success:function(respuesta){
 			console.log(respuesta);
+			$('#myModal').modal('hide');
 		},
 		error:function(error){
 			console.error(error);
