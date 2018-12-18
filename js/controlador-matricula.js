@@ -108,13 +108,14 @@ $("#select-clases").change(function(){
 $("#btn-matricular").click(function(){
 	var parametros = "seccion="+$("#select-secciones").val()+"&"+
 					"codCarrera="+$("#select-carreras").val()+"&"+
-					"codClase="+$("#select-carreras").val()+"&"+
+					"cuenta="+$("#usuario-matriculando").val()+"&"+
+					"codClase="+$("#select-clases").val()+"&"+
 					"facultad="+$("#slc-facultades").val();
-
-			console.log(parametros)		
+			
+			console.log(parametros);		
 			//$("#btn-matricular").attr("disabled",true);
 			$.ajax({
-				url:"ajax/matricula.php?accion=2",
+				url:"ajax/matricula.php?accion=1",
 				data:parametros,
 				method:"POST",
 				dataType:"json",
@@ -123,7 +124,6 @@ $("#btn-matricular").click(function(){
 						$('#modal-matricular').modal('hide');	
 						$("#clases-matriculadas").append(
 							`<tr>
-								<td></td>
 								<td>${respuesta.codCarrera}${respuesta.codClase}</td>
 								<td>${respuesta.clase}</td>
 								<td>${respuesta.inicio}</td>
