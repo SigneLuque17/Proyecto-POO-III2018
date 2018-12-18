@@ -76,7 +76,7 @@
                                     <li class="nav-item ">
                                             <a href="#" >Administración</a>
                                                 <ul class="submenu">
-                                                    <li><a href="login-administrador.php">Dirección académica</a></li>
+                                                    <li><a href="administrador.html">Dirección académica</a></li>
                                                     <hr>
                                                     <li><a href="#">Comisionado universitario</a></li>
                                                     <hr>

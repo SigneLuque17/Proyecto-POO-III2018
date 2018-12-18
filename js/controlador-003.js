@@ -11,7 +11,7 @@ $.ajax({
         for (var i =0;i<respuesta.length;i++)
             $("#tabla").append(`
                 <tr>
-                <td>${respuesta[i].codCarrera}${respuesta.codClase}</td>
+                <td>${respuesta[i].codCarrera}${respuesta[i].codClase}</td>
                     <td>${respuesta[i].clase}</td>
                     <td>${respuesta[i].seccion}</td>
                     <td>${respuesta[i].inicio}</td>
