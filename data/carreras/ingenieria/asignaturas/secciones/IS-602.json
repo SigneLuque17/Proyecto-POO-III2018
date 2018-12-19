@@ -1,4 +1,2 @@
-{"codCarrera":"IS","codClase":"602","seccion":"102","UV":"4","aula":"101","cupos":"26","inicio":"1100","final":"1200","dias":"LuMaMiJuVi","edificio":"B2","docente":"Raul Palma","clase":" Sistema de Informaci\u00f3n"}
-{"codCarrera":"IS","codClase":"602","seccion":"101","UV":"4","aula":"304","cupos":"22","inicio":"1500","final":"1600","dias":"MaJu","edificio":"B2","docente":"Arias Lopez","clase":"Sistema de Informaci\u00f3n"}
-{"codCarrera":"IS","codClase":"602","seccion":"100","UV":"4","aula":"308","cupos":"","inicio":"1700","final":"1800","dias":"LuMaMiJuVi","edificio":"B2","docente":"Luis Sanchez","clase":"Sistema de Informaci\u00f3n"}
-{"codCarrera":"IS","codClase":"602","seccion":"200","UV":"4","aula":"301","cupos":"22","inicio":"2000","final":"2100","dias":"LuMiVi","edificio":"B1","docente":"Marco Moncada","clase":"Sistema de Informaci\u00f3n"}
+{"codCarrera":"IS","codClase":"602","seccion":"010","UV":"4","aula":"147","cupos":"14","inicio":"1000","final":"1100","dias":"LuMaMi","edificio":"B2","docente":"Alejandra Cruz","clase":"Sistema de Informaci\u00f3n"}
+{"codCarrera":"IS","codClase":"602","seccion":"013","UV":"4","aula":"401","cupos":"20","inicio":"1300","final":"1400","dias":"LuMaMi","edificio":"B2","docente":"Hector cordova","clase":"Sistema de Informaci\u00f3n"}

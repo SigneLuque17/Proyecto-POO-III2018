@@ -1,4 +1,30 @@
 {"nombre":"Signe Elizabeth ","apellido":"Henriquez Luque","cuenta":"20161002073","ID":"0801-1998-06220","pass":"hola","correo":"signe.luque@gmail.com","facultad":"ingenieria","carrera":"Ingenieria en Sistemas","centro":"Ciudad Universitaria"}
 {"nombre":"Oscar Andres","apellido":"Fonseca","cuenta":"20141001812","ID":"0801-1994-02223","pass":"oscar","correo":"oscar.fonseca@unah.hn","facultad":"ingenieria","carrera":"Ingenieria en Sistemas","centro":"Ciudad Universitaria"}
 {"nombre":"Kenet Osly","apellido":"Enamorado Mejia","cuenta":"20161001401","ID":"0808-1999-14018","pass":"kenet","correo":"kenet.enamorado@unah.hn","facultad":"economia","carrera":"ADMINISTRACION ADUANERA","centro":"Ciudad Universitaria"}
-
+{"nombre":"Coque","apellido":"Antonio","cuenta":"2018056","ID":"0801199814156","pass":"2026","correo":"Coque@gmail.com","facultad":"juridicas","carrera":"DERECHO CONSTITUCIONAL","centro":"Ciudad Universitaria"}
+{"nombre":"Gaspar","apellido":"Calderaro","cuenta":"2018057","ID":"0801199814157","pass":"2027","correo":"Gaspar@gmail.com","facultad":"juridicas","carrera":"DERECHO PENAL","centro":"Ciudad Universitaria"}
+{"nombre":"Lidia","apellido":"Rubio","cuenta":"2018035","ID":"0801199814135","pass":"3035","correo":"Lidia@gmail.com","facultad":"economia","carrera":"MERCADOTECNIA","centro":"Ciudad Universitaria"}
+{"nombre":"Magali","apellido":"rey","cuenta":"2018036","ID":"0801199814136","pass":"3036","correo":"rey@gmail.com","facultad":"economia","carrera":"ECOTURISMO","centro":"Ciudad Universitaria"}
+{"nombre":"Luciana","apellido":"rey","cuenta":"2018037","ID":"0801199814137","pass":"3036","correo":"Luciana@gmail.com","facultad":"economia","carrera":"MICROFINANZAS","centro":"Ciudad Universitaria"}
+{"nombre":"Teresa","apellido":"Torres","cuenta":"2018038","ID":"0801199814138","pass":"3038","correo":"Teresa@gmail.com","facultad":"economia","carrera":"ALIMENTOS BEBIDAS","centro":"Ciudad Universitaria"}
+{"nombre":"Manoel","apellido":"Garcia","cuenta":"2018039","ID":"0801199814139","pass":"3039","correo":"Manoel@gmail.com","facultad":"economia","carrera":"GESTION INFORMATICA","centro":"Ciudad Universitaria"}
+{"nombre":"Francisco","apellido":"diaz","cuenta":"2018023","ID":"0801199814123","pass":"2223","correo":"Francisco@gmail.com","facultad":"sociales","carrera":"DESARROLLO LOCAL","centro":"UNAH-CURLA"}
+{"nombre":"Frank","apellido":"Parrado","cuenta":"201802","ID":"0801199814124","pass":"2224","correo":"Frank@gmail.com","facultad":"sociales","carrera":"SOCIOLOGIA","centro":"UNAH-CURLP"}
+{"nombre":"Helena","apellido":"Jimenez","cuenta":"2018025","ID":"0801199814125","pass":"2225","correo":"Helena@gmail.com","facultad":"sociales","carrera":"HISTORIA","centro":"UNAH-CUROC"}
+{"nombre":"Javier","apellido":"Palanco","cuenta":"2018026","ID":"0801199814126","pass":"2225","correo":"Javier@gmail.com","facultad":"sociales","carrera":"PERIODISMO","centro":"UNAH-CURNO"}
+{"nombre":"Lenice","apellido":"Martinez","cuenta":"2018027","ID":"0801199814127","pass":"2027","correo":"Lenice@gmail.com","facultad":"espaciales","carrera":"INFORMACION GEOGRAFICA","centro":"Ciudad Universitaria"}
+{"nombre":"Libia","apellido":"Ramirez","cuenta":"2018028","ID":"0801199814128","pass":"2028","correo":"Libia@gmail.com","facultad":"espaciales","carrera":"ASTRONOMIA","centro":"Ciudad Universitaria"}
+{"nombre":"Juan","apellido":"pablo","cuenta":"2018029","ID":"0801199814129","pass":"2029","correo":"Juan@gmail.com","facultad":"espaciales","carrera":"GESTION TERRITORIO","centro":"Ciudad Universitaria"}
+{"nombre":"Antonio","apellido":"Garcia","cuenta":"2018030","ID":"0801199814130","pass":"3030","correo":"Antonio@gmail.com","facultad":"economia","carrera":"ADMINISTRACION EMPRESA","centro":"Ciudad Universitaria"}
+{"nombre":"Laura","apellido":"diaz","cuenta":"2018031","ID":"0801199814131","pass":"3030","correo":"Laura@gmail.com","facultad":"economia","carrera":"ADMINISTRACION PUBLICA","centro":"Ciudad Universitaria"}
+{"nombre":"Lorenzo","apellido":"pablo","cuenta":"2018032","ID":"0801199814132","pass":"3032","correo":"Lorenzo@gmail.com","facultad":"economia","carrera":"ECONOMIA","centro":"Ciudad Universitaria"}
+{"nombre":"Noelia","apellido":"Gutierrez","cuenta":"2018044","ID":"0801199814144","pass":"4074","correo":"Noelia@gmail.com","facultad":"ciencias","carrera":"METALURGIA","centro":"Ciudad Universitaria"}
+{"nombre":"Otan","apellido":"Gutierrez","cuenta":"2018045","ID":"0801199814145","pass":"4075","correo":"Oten@gmail.com","facultad":"ciencias","carrera":"FORESTERIA COMUNITARIA","centro":"Ciudad Universitaria"}
+{"nombre":"Mireia","apellido":"Revert","cuenta":"2018046","ID":"0801199814146","pass":"4076","correo":"Mireia@gmail.com","facultad":"ciencias","carrera":"MANEJO DE DESASTRES","centro":"Ciudad Universitaria"}
+{"nombre":"Pedro","apellido":"Garrido","cuenta":"20180455","ID":"0801199814155","pass":"4050","correo":"Pedro@gmail.com","facultad":"medicina","carrera":"Enfermeria","centro":"Ciudad Universitaria"}
+{"nombre":"Rafael","apellido":"Banderas","cuenta":"2018047","ID":"0801199814147","pass":"4057","correo":"Banderas@gmail.com","facultad":"medicina","carrera":"MEDICINA","centro":"Ciudad Universitaria"}
+{"nombre":"Pires","apellido":"Alcaraz","cuenta":"2018048","ID":"0801199814148","pass":"4058","correo":"Pires@gmail.com","facultad":"medicina","carrera":"NUTRICION","centro":"Ciudad Universitaria"}
+{"nombre":"Rosa","apellido":"Bernal","cuenta":"2018049","ID":"0801199814149","pass":"4058","correo":"Rosa@gmail.com","facultad":"medicina","carrera":"TERAPIA FUNCIONAL","centro":"Ciudad Universitaria"}
+{"nombre":"Italia","apellido":"Gimenez","cuenta":"2018071","ID":"0801199814171","pass":"7071","correo":"Italia@gmail.com","facultad":"humanidades","carrera":"LETRAS","centro":"Ciudad Universitaria"}
+{"nombre":"Noelia","apellido":"Banderas","cuenta":"2018072","ID":"0801199814172","pass":"7071","correo":"Noelia@gmail.com","facultad":"humanidades","carrera":"FILOSOFIA","centro":"Ciudad Universitaria"}
+{"nombre":"Moreno","apellido":"Perez","cuenta":"2018073","ID":"0801199814173","pass":"7073","correo":"Moreno@gmail.com","facultad":"humanidades","carrera":"EDUCACION FISICA","centro":"Ciudad Universitaria"}
