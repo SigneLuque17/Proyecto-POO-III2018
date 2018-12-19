@@ -1,3 +1,6 @@
+<?php 
+   include("validar-sesion-docente.php");
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -97,7 +100,7 @@
 
         <section>
             <div>
-                <p id="jefe">REGISTRAR CALIFICACIONES DEL PERIODO</p>
+                <p id="jefe">REGISTRAR CALIFICACIONES DEL PERIODO</p><input type="hidden" value="<?php echo $_SESSION["numEmpleado"]?>" id="txt-empleado" disabled size=2> 
                 <div  style="float:right; margin-right: 1%"><a href="login.html">Cerrar sesión  </a><i class="fas fa-times-circle" style="color:red"></i></div> 
             </div>
             <br><br>
@@ -151,7 +154,7 @@
         </div>
     </section>
 
-
+    <script src="js/controlador-calificaciones.js"></script>
 
     </div>
 </body>

@@ -168,7 +168,7 @@
                             $registroClase = json_decode($linea,true);
                             if($registroClase["codigo"] == $_POST["codClase"]){
                                 //Obtener nombre de clase
-                $registro["clase"] =$registroClase["clase"];
+                				$registro["clase"] =$registroClase["clase"];
                                 break;
                             }
                         }
@@ -196,7 +196,16 @@
 								//----------------------------------------------------------------------
 
                 fwrite($archivo, json_encode($registro)."\n");
-                fclose($archivo);
+				fclose($archivo);
+								
+				$archivoSecciones = fopen("../data/empleados/docentes/".$registrocodigo["numDocente"]."/secciones.json", "w");
+					$registroSeccion["codCarrera"] = $this->codCarrera;
+					$registroSeccion["codClase"] = $this->codClase;
+					$registroSeccion["seccion"] = $this->seccion;
+					
+				fwrite($archivoSecciones, json_encode($registroSeccion)."\n");
+				fclose($archivoSecciones);
+
     
                 $respuesta = $registro;
                 $respuesta["num"] = 1;

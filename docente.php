@@ -122,7 +122,7 @@
         <div class="parte3">
         <table>
                             <tr>
-                                <td> <img src="img/iconos/flecha1.jpg"> <a href="clases-docente.html">Clases Asignadas</a></td>
+                                <td> <img src="img/iconos/flecha1.jpg"> <a href="clases-docente.php">Clases Asignadas</a></td>
                             </tr>
                             <tr>
                                 <td> <img src="img/iconos/flecha1.jpg"><a href="3l"> Enviar Correo</a></td>
@@ -130,7 +130,7 @@
                             </tr>
                           
                             <tr>
-                                <td><img src="img/iconos/flecha1.jpg"><a href="registro-calificaciones.html"> Registro de calificaciones</a> </td>
+                                <td><img src="img/iconos/flecha1.jpg"><a href="registro-calificaciones.php"> Registro de calificaciones</a> </td>
                             </tr>
                         </table>         
                    

@@ -65,6 +65,10 @@ class Docente{
         $respuesta = array();
         if(isset($_POST["nombre"])){
             mkdir("../data/empleados/docentes/".$_POST["num"]);
+            
+            if(!file_exists("../data/empleados/docentes/".$_POST["num"]."/secciones.json")){
+                $archivoSecciones = fopen("../data/empleados/docentes/".$_POST["num"]."/secciones.json", "w");
+            }
 
             if(!file_exists("../data/empleados/docentes.json")){
                 $archivo = fopen("../data/empleados/docentes.json", "w");
