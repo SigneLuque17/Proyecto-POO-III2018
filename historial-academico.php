@@ -121,7 +121,7 @@
                             <p><b>Cuenta</b></p>
                         </td>
                         <td>
-                            <p><?php echo $_SESSION["cuenta"]?></p>
+                            <p><?php echo $_SESSION["cuenta"]?></p><input type="hidden" value="<?php echo $_SESSION["cuenta"]?>" id="txt-cuenta" disabled size=2> 
                         </td>
                         <td>
                             <p><b>Centro</b></p>
@@ -184,9 +184,12 @@
                         <td>AÑO</td>
                         <td>PERIODO</td>
                         <td>CALIFICACION</td>
-                        <td>OBS</td>
+                        <td>ESTADO</td>
                     </tr>
                 </thead>
+                <tbody id="historial">
+                    <!--clases cursadas-->
+                </tbody>
             </table>
         </section>   
     </section>
@@ -201,4 +204,5 @@
 
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/controlador-historial.js"></script>
 </body>
