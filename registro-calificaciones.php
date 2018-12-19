@@ -120,27 +120,27 @@
                         <p style="color:#fff; margin-left: 3%"><b>ALUMNOS</b></p>
                         <div class="col-lg-6" style="float: left">    
                             <select  multiple size="12" name="alumnos" id="alumnos" style="width:99%">
-                                <option value="prueba">aqui van los alumnos matriculados</option>
+                                
                             </select>
                         </div>
 
                         <div class="col-6" style="float: left">
                             <p><b> Estado de Asignatura </b></p>
-                            <p style="float:left">Nota final:</p><input class="form-control" type="text" style="width:25%; margin-left: 40%">
+                            <p style="float:left">Nota final:</p><input id="txt-nota" class="form-control" type="number" style="width:25%; margin-left: 40%">
                          <br>  
                             <div class="radio">
-                                <label><input type="radio" name="estado" checked>  NSP</label>
+                                <label><input type="radio" name="estado" value="NSP">NSP</label>
                             </div>
 
                             <div class="radio">
-                                <label><input type="radio" name="estado">  APR</label>
+                                <label><input type="radio" name="estado" value="APR">APR</label>
                             </div>
 
                             <div class="radio">
-                                <label><input type="radio" name="estado">  REP</label>
+                                <label><input type="radio" name="estado" value="REP">REP</label>
                             </div>
                         <br>
-                            <button class="btn btn-primary" type="button" value="Guardar">Guardar</button>
+                            <button class="btn btn-primary" type="button" value="Guardar" id="btn-guardar">Guardar</button>
 
                         </div>
                             
