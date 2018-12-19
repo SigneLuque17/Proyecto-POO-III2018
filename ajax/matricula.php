@@ -124,13 +124,11 @@
                                 }
                                 fclose($archivoEmpleado);
                                 ////////////////////////////////
-
+                                if(!file_exists("../data/empleados/docentes/".$registrocodigo["numDocente"]."/".$_POST["seccion"].".json")){
+                                    $archivo = fopen("../data/empleados/docentes/".$registrocodigo["numDocente"]."/".$_POST["seccion"].".json", "w");
+                                }
 
                         //-------------------------------------------------------
-
-                        if(!file_exists("../data/empleados/docentes/".$registrocodigo["numDocente"]."/".$_POST["seccion"].".json")){
-                            $archivo = fopen("../data/empleados/docentes/".$registrocodigo["numDocente"]."/".$_POST["seccion"].".json", "w");
-                        }
 
                         $archivo = fopen("../data/empleados/docentes/".$registrocodigo["numDocente"]."/".$_POST["seccion"].".json", "a+");
                         

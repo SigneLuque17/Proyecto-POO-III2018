@@ -129,7 +129,10 @@
             if(isset($_POST["seccion"])){
                 if(!file_exists("../data/carreras/".$_POST["facultad"]."/asignaturas/secciones/".$_POST["codCarrera"]."-".$_POST["codClase"].".json")){
                     $archivo = fopen("../data/carreras/".$_POST["facultad"]."/asignaturas/secciones/".$_POST["codCarrera"]."-".$_POST["codClase"].".json", "w");
-                }
+				}
+						
+				
+				
                 $archivo = fopen("../data/carreras/".$_POST["facultad"]."/asignaturas/secciones/".$_POST["codCarrera"]."-".$_POST["codClase"].".json", "a+");
     
 
@@ -170,7 +173,27 @@
                             }
                         }
                         fclose($archivoClases);
-                /////////////////////////////////////////
+				/////////////////////////////////////////
+						//crear archivo json de la seccion para poder visualizar ahi los alumnos matriculados
+										//obtener numero de empleado del docente/////////////
+										$archivoEmpleado = fopen("../data/empleados/docentes.json","r");   
+										while(($linea = fgets($archivoEmpleado))){
+											$registroEmpleado = json_decode($linea,true);
+											if($registroEmpleado["nombre"] == $registro["docente"]){
+												//Obtener datos
+												$registrocodigo["numDocente"] =$registroEmpleado["num"];
+
+												break;
+											}
+										}
+										fclose($archivoEmpleado);
+										////////////////////////////////
+								
+								
+								if(!file_exists("../data/empleados/docentes/".$registrocodigo["numDocente"]."/". $registro["seccion"].".json")){
+									$archivoSeccion = fopen("../data/empleados/docentes/".$registrocodigo["numDocente"]."/". $registro["seccion"].".json", "w");
+								}
+								//----------------------------------------------------------------------
 
                 fwrite($archivo, json_encode($registro)."\n");
                 fclose($archivo);
