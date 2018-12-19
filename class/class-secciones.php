@@ -194,17 +194,18 @@
 									$archivoSeccion = fopen("../data/empleados/docentes/".$registrocodigo["numDocente"]."/". $registro["seccion"].".json", "w");
 								}
 								//----------------------------------------------------------------------
+					
 
                 fwrite($archivo, json_encode($registro)."\n");
 				fclose($archivo);
+
+								$archivoSecciones = fopen("../data/empleados/docentes/".$registrocodigo["numDocente"]."/secciones.json", "a++");
+								$registroSeccion["codCarrera"] = $this->codCarrera;
+								$registroSeccion["codClase"] = $this->codClase;
+								$registroSeccion["seccion"] = $this->seccion;
 								
-				$archivoSecciones = fopen("../data/empleados/docentes/".$registrocodigo["numDocente"]."/secciones.json", "w");
-					$registroSeccion["codCarrera"] = $this->codCarrera;
-					$registroSeccion["codClase"] = $this->codClase;
-					$registroSeccion["seccion"] = $this->seccion;
-					
-				fwrite($archivoSecciones, json_encode($registroSeccion)."\n");
-				fclose($archivoSecciones);
+								fwrite($archivoSecciones, json_encode($registroSeccion)."\n");
+								fclose($archivoSecciones);
 
     
                 $respuesta = $registro;

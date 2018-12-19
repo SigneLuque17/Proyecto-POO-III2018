@@ -64,15 +64,17 @@ class Docente{
 	public function guardarDocentes(){
         $respuesta = array();
         if(isset($_POST["nombre"])){
-            mkdir("../data/empleados/docentes/".$_POST["num"]);
-            
-            if(!file_exists("../data/empleados/docentes/".$_POST["num"]."/secciones.json")){
-                $archivoSecciones = fopen("../data/empleados/docentes/".$_POST["num"]."/secciones.json", "w");
-            }
+            mkdir("../data/empleados/docentes/".$_POST["num"]);        
 
             if(!file_exists("../data/empleados/docentes.json")){
                 $archivo = fopen("../data/empleados/docentes.json", "w");
             }
+
+            if(!file_exists("../data/empleados/docentes/".$_POST["num"]."/secciones.json")){
+                $archivoSecciones = fopen("../data/empleados/docentes/".$_POST["num"]."/secciones.json", "w");
+            }
+
+
             $archivo = fopen("../data/empleados/docentes.json", "a+");
            
             $registro["nombre"] = $this->nombre;

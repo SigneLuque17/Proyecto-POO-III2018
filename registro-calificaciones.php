@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="css/FontAwesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="css//FontAwesome/css/all.css">
     <link rel="stylesheet" href="css/registro-calificaciones.css">
+    
+
 </head>
 <body>
     <div class="fondo">
@@ -110,7 +112,6 @@
                     <div class="form-control col-12 col-sm-12 col-md-6 col-lg-4" id="clases">
                         <p style="color:#fff"><b> ASIGNATURAS</b></p>
                         <select class="form-control col-12" name="clases" id="sl-clases">
-                            <option value="clase">Seleccione la Clase</option>
                             <!--apareceran los nombres de las clases a las que se le han asignado al maestro-->
                         </select>
                     </div>  
@@ -154,6 +155,8 @@
         </div>
     </section>
 
+    <script src="js/jquery-3.3.1.min.js"></script>     
+    <script src="js/bootstrap.min.js"></script> 
     <script src="js/controlador-calificaciones.js"></script>
 
     </div>
