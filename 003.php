@@ -185,55 +185,15 @@
         <th>Edificio</th>
         <th>Aula</th>
         <th>UV</th>
-        <th>OBS</th>
         <th>Periodo</th>
+        <th>OBS</th>
         <th>Semana</th>
     
-    </tr><!--contenido tabla-->
-    <tr style="color:#000066;">
-            <td><a>Lorem</a></td>
-            <td><a>Lorem, ipsum dolor.</a></td>
-            <td><a>Lorem</a></td>
-            <td><a>Lorem</a></td>
-            <td><a>Lorem</a></td>
-            <td><a>Lorem</a></td>
-            <td><a>Lorem</a></td>
-            <td><a>Lorem</a></td>
-            <td><a>Lorem</a></td>
-            <td><a></a></td>
-            <td><a>Lorem</a></td>
-            <td><a></a></td>
-    </tr>
-    
-    <tr style="color:#000066;">
-            <td><a>Lorem</a></td>
-            <td><a>Lorem, ipsum dolor.</a></td>
-            <td><a>Lorem</a></td>
-            <td><a>Lorem</a></td>
-            <td><a>Lorem</a></td>
-            <td><a>Lorem</a></td>
-            <td><a>Lorem</a></td>
-            <td><a>Lorem</a></td>
-            <td><a>Lorem</a></td>
-            <td><a></a></td>
-            <td><a>Lorem</a></td>
-            <td><a></a></td>
-        
-    </tr>
-    
-    <tr style="color:#000066;">
-       <td><a></a></td>
-       <td><a></a></td>
-       <td><a></a></td>
-       <td><a></a></td>
-       <td><a></a></td>
-       <td><a></a></td>
-       <td><a></a></td>
-       <td><a></a></td>
-       <td><a></a></td>
-       <td><a></a></td>
-       <td><a></a></td>
-       <td><a></a></td>
+   <!--contenido tabla-->
+   <tr id="tabla" style="color:#000066;">
+            
+     </tr>
+            
 </tbody>
 </table>
 </div>

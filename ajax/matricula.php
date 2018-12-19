@@ -69,7 +69,10 @@
         } 
             break;
 
-        case 2:
+            case 2:
+
+            include("../class/class-matricula.php");
+            echo Matricula::obtenerMatricula($_GET["facultad"],$_GET["Carrera"],$_GET["codClase"].$_POST["cuenta"]);
         
             //obtener datos de la carrera
                 $archivoCarrera = fopen("../data/carreras/".$_GET["facultad"]."/carreras.json","r");   
@@ -176,5 +179,9 @@
                     } 
             break;
     }
+    
+            break;
+        }
+        
     
 ?>

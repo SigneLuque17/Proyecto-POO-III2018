@@ -84,7 +84,7 @@
                                                     <hr>
                                                     <li><a href="#">Decanos</a></li>
                                                     <hr>
-                                                    <li><a href="empleados.html">DIPP</a></li>  
+                                                    <li><a href="">DIPP</a></li>  
                                                     <hr>
                                                     <li><a href="#">SEAPI</a></li>   
                                                 </ul>

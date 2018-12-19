@@ -176,7 +176,7 @@
             <div> 
                 <img src="img/iconos/evaluacion.gif"  id="evaluacion">
                 <br> 
-                <a href="#" style="float: right; margin-right: 7%; color: #4CAF50 ">Evaluar Docentes</a>                                         
+                <a href="Evaluacion-docente.html" style="float: right; margin-right: 7%; color: #4CAF50 ">Evaluar Docentes</a>                                         
             </div>         
         </div>
     </section>
