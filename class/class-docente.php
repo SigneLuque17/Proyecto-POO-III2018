@@ -64,6 +64,8 @@ class Docente{
 	public function guardarDocentes(){
         $respuesta = array();
         if(isset($_POST["nombre"])){
+            mkdir("../data/empleados/docentes/".$_POST["num"]);
+
             if(!file_exists("../data/empleados/docentes.json")){
                 $archivo = fopen("../data/empleados/docentes.json", "w");
             }

@@ -138,7 +138,7 @@ class Alumno{
 	public function guardarAlumnos(){
         $respuesta = array();
         if(isset($_POST["nombre"])){
-
+            
 
             if(!file_exists("../data/alumnos/alumnos.json")){
                 $archivo = fopen("../data/alumnos/alumnos.json", "w");

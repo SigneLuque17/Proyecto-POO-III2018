@@ -186,10 +186,10 @@
                                                        <p><b>Cod.</b></p>
                                                    </td>
                                                    <td>
-                                                        <p><b>Asignatura</b></p>
+                                                        <p><b>Sección</b></p>
                                                    </td>
                                                    <td>
-                                                        <p><b>Sección</b></p>
+                                                        <p><b>Asignatura</b></p>
                                                    </td>
                                                    <td>
                                                         <p><b>HI</b></p>
@@ -338,7 +338,8 @@
                      </div>
                 </div>  
                 <div class="modal-footer">
-                    <button class="btn btn-success centrar"  type="button" value="matricular" id="btn-matricular">Matricular</button>
+                    <button class="btn btn-success centrar"  type="button" value="matricular" id="btn-matricular">Matricular</button>    
+                    <button class="btn btn-success centrar"  type="button" value="matricular" id="btn-adicionar" >Adicionar Asignatura</button>        
                 </div>                              
             </div>
         </div>

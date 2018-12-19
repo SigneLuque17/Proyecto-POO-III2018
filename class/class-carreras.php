@@ -69,7 +69,8 @@ class Carrera{
         $respuesta = array();
         if(isset($_POST["carrera"])){
 			mkdir("../data/matricula/".$_POST["facultad"]."/".$_POST["codigo"]);
-		
+			mkdir("../data/alumnos/".$_POST["facultad"]."/".$_POST["codigo"]);
+
 			if(!file_exists("../data/carreras/".$_POST["facultad"]."/carreras.json")){
                 $archivo = fopen("../data/carreras/".$_POST["facultad"]."/carreras.json", "w");
             }

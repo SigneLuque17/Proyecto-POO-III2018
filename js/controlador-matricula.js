@@ -142,7 +142,7 @@ $("#select-clases").change(function(){
 
 ////////////////////////////////////////////MATRICULAR ASIGNATURA//////////////////////////////////////////////////////
 
-$("#btn-matricular").click(function(){
+$("#btn-adicionar").click(function(){
 	var parametros = "seccion="+$("#select-secciones").val()+"&"+
 					"codCarrera="+$("#select-carreras").val()+"&"+
 					"cuenta="+$("#usuario-matriculando").val()+"&"+
@@ -150,7 +150,7 @@ $("#btn-matricular").click(function(){
 					"facultad="+$("#slc-facultades").val();
 			
 			console.log(parametros);		
-			$("#btn-matricular").attr("disabled",true);
+			$("#btn-adicionar").attr("disabled",true);
 			
 			$.ajax({
 				url:"ajax/matricula.php?accion=1",  //accion 1 para matricular clases
@@ -159,7 +159,7 @@ $("#btn-matricular").click(function(){
 				dataType:"json",
 				success:function(respuesta){
 					console.log(respuesta);
-				//	$('#modal-matricular').modal('hide');		
+					//$('#modal-matricular').modal('hide');		
 						$("#clases-matriculadas").append(
 							`<tr>
 								<td>${respuesta.codCarrera}${respuesta.codClase}</td>
@@ -175,9 +175,29 @@ $("#btn-matricular").click(function(){
 					}	
 				
 			});
+
 });
 
+$("#btn-matricular").click(function(){
+	var parametros = "seccion="+$("#select-secciones").val()+"&"+
+					"codCarrera="+$("#select-carreras").val()+"&"+
+					"cuenta="+$("#usuario-matriculando").val()+"&"+
+					"codClase="+$("#select-clases").val()+"&"+
+					"facultad="+$("#slc-facultades").val();
+			
+			console.log(parametros);		
+			$("#btn-matricular").attr("disabled",true);
+			
+			$.ajax({
+				url:"ajax/matricula.php?accion=3",  //accion 1 para matricular clases en el archivo Seccion
+				data:parametros,
+				method:"POST",
+				dataType:"json",
+				success:function(respuesta2){
+					console.log(respuesta2);						
+					//anadir mensaje de satisfactorio					
+					}	
+				
+			});
 
-
-
-
+});
