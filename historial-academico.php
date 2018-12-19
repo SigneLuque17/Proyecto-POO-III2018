@@ -25,7 +25,7 @@
 </head>
 <body>
  <div class="fondo">
-    <section class="seccion1">
+ <section class="seccion1">
         <div class="container-fluid">
             <div class="row h-100 w-100">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
@@ -41,7 +41,7 @@
         </div>
     </section>
 
-    <nav class="navbar navbar-expand-lg bg-light ">
+                    <nav class="navbar navbar-expand-lg bg-light ">
     
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             
@@ -51,23 +51,23 @@
                                     </li>  
                                     
                                     <li class="nav-item ">
-                                        <a class="nav-link" href="login.html" style="color:fff; font-weight:bold">Primer ingreso</a>
+                                        <a class="nav-link" href="login.php" style="color:fff; font-weight:bold">Primer ingreso</a>
                                     </li>  
 
                                     <li class="nav-item active ">
                                         <a href="#" >Sistema de pregrado</a>
                                             <ul class="submenu">
-                                                <li><a href="estudiantes.html">Estudiantes</a></li>
+                                                <li><a href="login.php">Estudiantes</a></li>
                                                 <hr>
-                                                <li><a href="profesores.html">Profesores</a></li>
+                                                <li><a href="login-docentes.php">Profesores</a></li>
                                                 <hr>
-                                                <li><a href="jefes.html">Jefes de departamento</a></li>
+                                                <li><a href="login-jefes.php">Jefes de departamento</a></li>
                                                 <hr>
                                                 <li><a href="#">Programas especiales</a></li>
                                                 <hr>
                                                 <li><a href="#">Suficiencias</a></li>
                                                 <hr>
-                                                <li><a href="coordinador.html">Coordinador asignatura</a></li>      
+                                                <li><a href="login-coordinadores.php">Coordinador asignatura</a></li>      
                                             </ul>
                                     </li>
                                      
@@ -82,14 +82,14 @@
                                                 <hr>
                                                 <li><a href="#">Coordinación de postgrados</a></li>
                                                 <hr>
-                                                <li><a href="#">Registro de calificaciones</a></li>    
+                                                <li><a href="calificaciones.html">Registro de calificaciones</a></li>    
                                             </ul>
                                     </li>  
                                     
                                     <li class="nav-item ">
                                             <a href="#" >Administración</a>
                                                 <ul class="submenu">
-                                                    <li><a href="#">Dirección académica</a></li>
+                                                    <li><a href="administrador.html">Dirección académica</a></li>
                                                     <hr>
                                                     <li><a href="#">Comisionado universitario</a></li>
                                                     <hr>
@@ -97,7 +97,7 @@
                                                     <hr>
                                                     <li><a href="#">Decanos</a></li>
                                                     <hr>
-                                                    <li><a href="#">DIPP</a></li>  
+                                                    <li><a href="">DIPP</a></li>  
                                                     <hr>
                                                     <li><a href="#">SEAPI</a></li>   
                                                 </ul>
@@ -105,7 +105,8 @@
                               </ul>
                        
                             </div>
-    </nav>
+                    </nav>
+
 
     <section class="seccion2" style="padding:2% 7%;">
             <div  style="float:right;"><a href="login.html">Cerrar sesión  </a><i class="fas fa-times-circle" style="color:red"></i></div> 
