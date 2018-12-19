@@ -103,7 +103,7 @@
     <section>
         <div>
             <p id="estudiante">SERVICIOS AL DOCENTE</p>
-            <div  style="float:right; margin-right: 1%"><a href="login.html">Cerrar sesión  </a><i class="fas fa-times-circle" style="color:red"></i></div> 
+            <div  style="float:right; margin-right: 1%"><a href="login-docentes.php">Cerrar sesión  </a><i class="fas fa-times-circle" style="color:red"></i></div> 
         </div>
     <br>
         <div style="margin-left: 15px;margin-top: 1%" id="derechos">

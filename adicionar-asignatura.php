@@ -103,7 +103,7 @@
         <section>
                 <div>
                     <p id="jefe">ADICIONAR ASIGNATURAS</p>                   
-                    <div  style="float:right; margin-right: 1%"><a href="login.html">Cerrar sesión  </a><i class="fas fa-times-circle" style="color:red"></i></div> 
+                    <div  style="float:right; margin-right: 1%"><a href="login.php">Cerrar sesión  </a><i class="fas fa-times-circle" style="color:red"></i></div> 
                     <br>
                     <div style="margin-left: 15px;margin-top: 3%">
                         <P><b> Matrícula de Periodo</b></P>

@@ -101,7 +101,7 @@
         <section>
                 <div>
                     <p id="jefe">JEFE DE DEPARTAMENTO</p>
-                    <div  style="float:right; margin-right: 1%"><a href="login.html">Cerrar sesión  </a><i class="fas fa-times-circle" style="color:red"></i></div> 
+                    <div  style="float:right; margin-right: 1%"><a href="login-coordinadores.php">Cerrar sesión  </a><i class="fas fa-times-circle" style="color:red"></i></div> 
                 </div>
 
                 <br>
