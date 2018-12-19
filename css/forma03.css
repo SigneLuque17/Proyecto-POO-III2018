@@ -252,3 +252,17 @@ font-size: 12px;
     margin-left: auto;
     margin-right: auto;
 }
+
+#tabla2{
+    width:96%;
+    border-collapse:collapse;
+    white-space: nowrap;
+    border-color: #696981;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1px;
+}
+
+#tabla2 p{
+    font-size:11px; 
+}

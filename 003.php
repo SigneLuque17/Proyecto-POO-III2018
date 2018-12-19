@@ -140,9 +140,9 @@
                 <a><img src="img/anuncios/profile.jpg " style="height:130px; width:125px;"></a>
                     </td>
                     <td>Cuenta:</td>
-                    <td><?php echo $_SESSION["cuenta"]?></td>
+                    <td><?php echo $_SESSION["cuenta"]?></td> <input type="hidden" value="<?php echo $_SESSION["cuenta"]?>" id="txt-cuenta" disabled size=2> 
                     <td >Centro:</td>
-                    <td ><?php echo $_SESSION["centro"]?></td>
+                    <td ><?php echo $_SESSION["centro"]?></td><input type="hidden" value="<?php echo $_SESSION["facultad"]?>" id="txt-facultad" disabled size=2> 
                 </tr>
     
                 <tr>
@@ -154,7 +154,7 @@
                 </tr>
                 <tr>
                     <td> Carrera:</td>
-                    <td ><span ><?php echo $_SESSION["carrera"]?></span></td>
+                    <td ><span ><?php echo $_SESSION["carrera"]?></span></td><input type="hidden" value="<?php echo $_SESSION["carrera"]?>" id="txt-carrera" disabled size=2> 
                 </tr>
             </tbody>
         </table>
@@ -168,37 +168,50 @@
 <p id="parrafo"> Asignaturas Matriculadas </p>
 </section>
 
-
-
 <!--clases matriculadas-->
-  <div class="container">
-         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-<table id="table1" cellspacing="0" cellpadding="0" rules="all" style="background-color:White;border-color:#CCCCCC">
-    <tbody><!--titulos de tabla-->
-        <tr style="color:White;background-color:#006699">
-        <th>Cod.</th>
-        <th>Asignatura</th>
-        <th>Sección</th>
-        <th>HI</th>
-        <th>HF</th>
-        <th>Dias</th>
-        <th>Edificio</th>
-        <th>Aula</th>
-        <th>UV</th>
-        <th>Periodo</th>
-        <th>OBS</th>
-        <th>Semana</th>
-    
-   <!--contenido tabla-->
-   <tr id="tabla" style="color:#000066;">
-            
-     </tr>
-            
-</tbody>
-</table>
-</div>
-</div>
 
+         <table class="border" cellspacing="0" cellpadding="0" id="tabla2">
+                                    <thead> 
+                                        <!--fila 1-->
+                                               <tr>
+                                                   <td>
+                                                       <p><b>Cod.</b></p>
+                                                   </td>
+                                                   <td>
+                                                        <p><b>Asignatura</b></p>
+                                                   </td>
+                                                   <td>
+                                                        <p><b>Sección</b></p>
+                                                   </td>
+                                                   <td>
+                                                        <p><b>HI</b></p>
+                                                   </td>
+                                                   <td>
+                                                        <p><b>HF</b></p>
+                                                   </td>
+                                                   <td>
+                                                        <p><b>Días</b></p>
+                                                   </td>
+                                                   <td>
+                                                        <p><b>Edificio</b></p>
+                                                   </td>
+                                                   <td>
+                                                        <p><b>Aula</b></p>
+                                                   </td>
+                                                   <td>
+                                                        <p><b>UV</b></p>
+                                                   </td>
+                                                   <td>
+                                                        <p><b>Periodo</b></p>
+                                                   </td>
+                                               </tr>
+                                        
+                                              
+                                    </thead>
+                                    <tbody id="clases-matriculadas">
+                                    <!--fila 2 se ira anadiendo conforme las asignaturas seleccionadas-->
+                                    </tbody>
+                            </table>
 
 <section>
 <div id="parrafo2">
@@ -259,7 +272,7 @@
         </div>
     </section>
 
-  
-<script src="js/jquery-3.3.1.js"></script>
+
+<script src="js/controlador-forma03.js"></script>
 </body>
 </html>

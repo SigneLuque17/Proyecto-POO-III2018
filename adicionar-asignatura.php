@@ -128,7 +128,7 @@
                                                 <p><b>Carrera:</b></p>
                                             </td>
                                             <td>
-                                                <p id="carrerasss"><?php echo $_SESSION["carrera"]?></p>
+                                                <p id="carrerasss"><?php echo $_SESSION["carrera"]?></p><input type="hidden" value="<?php echo $_SESSION["carrera"]?>" id="txt-carrera" disabled size=2> 
                                             </td>
                                         </tr>
                     
@@ -137,14 +137,14 @@
                                                 <p><b>Cuenta:</b></p>
                                             </td>
                                             <td>
-                                                <p><?php echo $_SESSION["cuenta"]?></p>
+                                                <p><?php echo $_SESSION["cuenta"]?></p><input type="hidden" value="<?php echo $_SESSION["cuenta"]?>" id="txt-cuenta" disabled size=2> 
                                             </td>
 
                                             <td>
                                                 <p><b>UV Disponibles:</b></p>
                                             </td>
                                             <td>
-                                                <p>25</p>
+                                                <p>25</p><input type="hidden" value="<?php echo $_SESSION["facultad"]?>" id="txt-facultad" disabled size=2> 
                                             </td>
                                         </tr>
                     
@@ -307,7 +307,8 @@
               <!-- Modal content-->
             <div class="modal-content" style="background-color:#183F60">
                 <div class="modal-header centrar" >
-                  <h6 class="modal-title" style="color:white"><b>Asignaturas</b></h6>
+                  <h6 class="modal-title" style="color:white"  ><b>Asignaturas</b></h6>
+                  <input type="hidden" value="<?php echo $_SESSION["cuenta"]?>" id="usuario-matriculando" disabled size=2>            
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body" style="background-color:rgb(255, 255, 255);" class="col-12 col-sm-12 col-md-6 col-lg-6 form-control">                
